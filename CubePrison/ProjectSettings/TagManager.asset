@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Item
+  - Teto
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Teto
   - Water
   - UI
   - 
