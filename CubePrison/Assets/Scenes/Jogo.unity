@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.63320273, g: 0.5850242, b: 0.72955966, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_AmbientIntensity: 1.07
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.38257977, g: 0.3285866, b: 0.49056602, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -292,7 +292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &268733185
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 439734422}
   - component: {fileID: 439734421}
   - component: {fileID: 439734424}
+  - component: {fileID: 439734425}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -650,6 +651,27 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!95 &439734425
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439734420}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 581a041925573ce4392eee0862fa7b35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &549867574
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +702,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1006,7 +1028,7 @@ GameObject:
   - component: {fileID: 636119144}
   - component: {fileID: 636119143}
   m_Layer: 0
-  m_Name: Parede Frente
+  m_Name: ParedeFrente (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1196,7 +1218,7 @@ GameObject:
   - component: {fileID: 778689325}
   - component: {fileID: 778689324}
   m_Layer: 0
-  m_Name: Parede Tras
+  m_Name: ParedeTras (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1301,8 +1323,8 @@ GameObject:
   - component: {fileID: 832852484}
   - component: {fileID: 832852483}
   - component: {fileID: 832852482}
-  m_Layer: 0
-  m_Name: Teto
+  m_Layer: 3
+  m_Name: Teto (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1333,7 +1355,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1425,11 +1447,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 636119142}
-  - {fileID: 778689323}
   - {fileID: 1036954306}
   - {fileID: 1104449520}
-  - {fileID: 1702747837}
+  - {fileID: 778689323}
   - {fileID: 832852481}
+  - {fileID: 1702747837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1036954305
@@ -1445,7 +1467,7 @@ GameObject:
   - component: {fileID: 1036954308}
   - component: {fileID: 1036954307}
   m_Layer: 0
-  m_Name: Parede R
+  m_Name: ParedeR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1551,7 +1573,7 @@ GameObject:
   - component: {fileID: 1104449522}
   - component: {fileID: 1104449521}
   m_Layer: 0
-  m_Name: Parede L
+  m_Name: ParedeL (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1660,7 +1682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1219266801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2040,7 +2062,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e7e27c6d01c14da46a9ac629ee1bc4e2, type: 2}
+  - {fileID: 2100000, guid: b13438c700d726d4ea8546a5784d1586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2081,7 +2103,7 @@ GameObject:
   - component: {fileID: 1760730789}
   - component: {fileID: 1760730788}
   - component: {fileID: 1760730790}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,9 +2121,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10.03
-  m_Range: 7.1737404
+  m_Color: {r: 0.9622642, g: 0.9037766, b: 0.77767885, a: 1}
+  m_Intensity: 37.09
+  m_Range: 10.603303
   m_SpotAngle: 156
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2137,7 +2159,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -2159,7 +2181,7 @@ Transform:
   m_GameObject: {fileID: 1760730787}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 8.39, z: 0}
+  m_LocalPosition: {x: 0, y: 8.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2345,6 +2367,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1581381643}
+  - {fileID: 439734423}
   - {fileID: 549867576}
   - {fileID: 1760730789}
   - {fileID: 597369025}
@@ -2354,5 +2377,4 @@ SceneRoots:
   - {fileID: 182756456}
   - {fileID: 1219266802}
   - {fileID: 268733186}
-  - {fileID: 439734423}
   - {fileID: 305069367}
