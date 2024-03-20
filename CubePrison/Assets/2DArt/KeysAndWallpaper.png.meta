@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KeysAndWallpaper_0
+      name: Rasgado_CLICK
       rect:
         serializedVersion: 2
         x: 36
@@ -105,7 +105,7 @@ TextureImporter:
         width: 651
         height: 791
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeysAndWallpaper_1
+      name: Rasgado
       rect:
         serializedVersion: 2
         x: 714
@@ -126,7 +126,7 @@ TextureImporter:
         width: 288
         height: 791
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeysAndWallpaper_2
+      name: Chave_cinza
       rect:
         serializedVersion: 2
         x: 1091
@@ -147,7 +147,7 @@ TextureImporter:
         width: 158
         height: 394
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeysAndWallpaper_3
+      name: Chave_dourada
       rect:
         serializedVersion: 2
         x: 1301
@@ -168,7 +168,7 @@ TextureImporter:
         width: 158
         height: 395
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,15 +181,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeysAndWallpaper_4
+      name: Botao_laterais
       rect:
         serializedVersion: 2
-        x: 1093
-        y: 1342
-        width: 226
-        height: 195
+        x: 1546
+        y: 1686
+        width: 270
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: 5e02d4ed22112904e8f349a1eea3a0ea
       internalID: -28350853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fita
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1342
+        width: 226
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203571c87c756db41ba7daa0ec7a23d8
+      internalID: -1960752474
       vertices: []
       indices: 
       edges: []
@@ -212,11 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      KeysAndWallpaper_0: 558474206
-      KeysAndWallpaper_1: 784984751
-      KeysAndWallpaper_2: -92084807
-      KeysAndWallpaper_3: 1482006273
-      KeysAndWallpaper_4: -28350853
+      Botao_laterais: -28350853
+      Chave_cinza: -92084807
+      Chave_dourada: 1482006273
+      Fita: -1960752474
+      Rasgado: 784984751
+      Rasgado_CLICK: 558474206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
