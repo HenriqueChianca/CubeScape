@@ -59,7 +59,7 @@ public class CameraRotate : MonoBehaviour
     void RotateUp()
     {
         // Rotação para o teto
-        currentDirection = 4;
+        currentDirection = (currentDirection != 4) ? 4 : (currentDirection == 4) ? 3 : 0;
         downButton.gameObject.SetActive(true); // Ativa o botão para baixo
 
         // Atualiza o parâmetro do Animator para refletir a nova orientação da câmera
