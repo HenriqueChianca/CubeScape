@@ -97,12 +97,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArmarioDireita
+      name: Direita
       rect:
         serializedVersion: 2
-        x: 123
-        y: 2045
-        width: 1806
+        x: 101
+        y: 2139
+        width: 1805
+        height: 1823
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c8b0c52d1fa0e498b67526e90cb0f3
+      internalID: 408461218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esquerda
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 2139
+        width: 1804
+        height: 1823
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa38c29a18f7e348bfceda4d895a773
+      internalID: 1089100176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aberto
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 57
+        width: 1805
         height: 1822
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -111,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08e3b1d4dec03a64e85d6760eec38ca1
-      internalID: 751212514
+      spriteID: 850d1f9a169fa6b4d901ef7a5905ca3a
+      internalID: -400731168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArmarioEsquerda
+      name: Fechado
       rect:
         serializedVersion: 2
         x: 2171
-        y: 2047
+        y: 57
         width: 1804
         height: 1822
       alignment: 0
@@ -132,50 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a62bb105247254b8bf11d64432e6b9
-      internalID: 1645294896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmarioFechado
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 57
-        width: 1806
-        height: 1822
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b42e75361c17ee1449209632a4b69f90
-      internalID: 183529328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArmarioAberto
-      rect:
-        serializedVersion: 2
-        x: 2171
-        y: 57
-        width: 1804
-        height: 1822
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b173ba91a61899c43b1d19eacccf4424
-      internalID: -674428970
+      spriteID: 5bfced05051a1ad418f289883e119ac4
+      internalID: 2015004063
       vertices: []
       indices: 
       edges: []
@@ -191,18 +191,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ArmarioAberto: -674428970
-      ArmarioDireita: 751212514
-      ArmarioEsquerda: 1645294896
-      ArmarioFechado: 183529328
+      Aberto: -400731168
+      ArmarioSprites_0: 40247880
       ArmarioSprites_1: -1625014383
-      ArmarioSprites_10: -400731168
       ArmarioSprites_2: -500362847
-      ArmarioSprites_4: 408461218
-      ArmarioSprites_5: 1089100176
+      ArmarioSprites_3: 1571357712
+      ArmarioSprites_6: 1170126380
       ArmarioSprites_7: 2037928227
       ArmarioSprites_8: 399268925
       ArmarioSprites_9: -218995039
+      Direita: 408461218
+      Esquerda: 1089100176
+      Fechado: 2015004063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
