@@ -5,9 +5,11 @@ using UnityEngine;
 public class CanvasController : MonoBehaviour
 {
     public GameObject mainObject; // Objeto principal a ser controlado
-    public GameObject[] additionalObjects; // Array de objetos adicionais a serem controlados
+   // public GameObject[] additionalObjects; // Array de objetos adicionais a serem controlados
 
     private bool mainObjectVisible = false; // Flag para controlar a visibilidade do objeto principal
+
+    public UIItem[] uiItems;
 
     void Update()
     {
@@ -18,22 +20,33 @@ public class CanvasController : MonoBehaviour
             mainObjectVisible = !mainObjectVisible;
             mainObject.SetActive(mainObjectVisible);
         }
-
+        List<int> itensUsados = new();
         // Verificar se uma nova string foi salva no PlayerPrefs
         for (int i = 0; i < ItemSaver.GetInstance().stringList.Count; i++)
         {
-            // Verificar se a string salva corresponde a um dos objetos adicionais
-            if (i < additionalObjects.Length)
+            for (int j = 0; j < uiItems.Length; j++)
             {
-                // Ativar o objeto adicional correspondente
-                additionalObjects[i].SetActive(true);
+                if (ItemSaver.GetInstance().stringList[i] == uiItems[j].key)
+                {
+                    uiItems[j].image.SetActive(true);
+                    itensUsados.Add(j);
+                }
             }
         }
 
-        // Desativar os objetos adicionais extras que não têm uma string correspondente salva
-        for (int i = ItemSaver.GetInstance().stringList.Count; i < additionalObjects.Length; i++)
+        for (int i = 0; i < uiItems.Length; i++)
         {
-            additionalObjects[i].SetActive(false);
+            if (!itensUsados.Contains(i))
+            {
+                uiItems[i].image.SetActive(false);
+            }
         }
     }
+}
+
+[System.Serializable]
+public class UIItem
+{
+    public GameObject image;
+    public string key;
 }
