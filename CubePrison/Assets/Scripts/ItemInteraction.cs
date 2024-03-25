@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ItemInteraction : MonoBehaviour
 {
+    public AudioClip audioClip;
+    public AudioSource audioSource;
     public string Requirement;
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,11 @@ public class ItemInteraction : MonoBehaviour
                     {
                         itemSaver.RemoveString(indexToRemove);
                         print("String removida com sucesso do PlayerPrefs.");
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.clip = audioClip;
+                            audioSource.Play();
+                        }
                         break;
                     }
                     else
