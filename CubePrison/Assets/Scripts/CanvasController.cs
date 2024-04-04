@@ -4,12 +4,35 @@ using UnityEngine;
 
 public class CanvasController : MonoBehaviour
 {
+    private static CanvasController instance;
+
     public GameObject mainObject; // Objeto principal a ser controlado
    // public GameObject[] additionalObjects; // Array de objetos adicionais a serem controlados
 
     private bool mainObjectVisible = false; // Flag para controlar a visibilidade do objeto principal
 
     public UIItem[] uiItems;
+
+    private void Awake()
+    {
+        // Garantir que apenas uma instância da classe exista
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    // Método estático para acessar a instância do singleton
+    public static CanvasController GetInstance()
+    {
+        return instance;
+    }
+
 
     void Update()
     {

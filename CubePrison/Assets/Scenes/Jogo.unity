@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1650,6 +1650,7 @@ GameObject:
   - component: {fileID: 597369024}
   - component: {fileID: 597369023}
   - component: {fileID: 597369022}
+  - component: {fileID: 597369026}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1746,6 +1747,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &597369026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597369021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5dfb044049d6e45a036066a7204022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainObject: {fileID: 1787491597}
+  uiItems:
+  - image: {fileID: 1270852801}
+    key: ChavePrateada
+  - image: {fileID: 2022326178}
+    key: ChaveDourada
 --- !u!1 &613042440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,9 +3093,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1810974575, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3341,7 +3360,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1581381643}
-  - component: {fileID: 1581381642}
   - component: {fileID: 1581381644}
   - component: {fileID: 1581381645}
   - component: {fileID: 1581381646}
@@ -3352,24 +3370,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1581381642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581381641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5dfb044049d6e45a036066a7204022, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainObject: {fileID: 1787491597}
-  uiItems:
-  - image: {fileID: 1270852801}
-    key: ChavePrateada
-  - image: {fileID: 2022326178}
-    key: ChaveDourada
 --- !u!4 &1581381643
 Transform:
   m_ObjectHideFlags: 0
@@ -3752,7 +3752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1787491598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4064,7 +4064,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1482006273, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
+  m_Sprite: {fileID: -461305602, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
