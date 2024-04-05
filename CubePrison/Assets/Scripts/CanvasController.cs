@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CanvasController : MonoBehaviour
 {
     private static CanvasController instance;
 
-    public GameObject mainObject; // Objeto principal a ser controlado
-   // public GameObject[] additionalObjects; // Array de objetos adicionais a serem controlados
+    public int SelectedInInventory = 0, j;
 
-    private bool mainObjectVisible = false; // Flag para controlar a visibilidade do objeto principal
+    public GameObject mainObject; // Objeto principal a ser controlado
+
+    public bool mainObjectVisible = false, SavingInInventory; // Flag para controlar a visibilidade do objeto principal
 
     public UIItem[] uiItems;
 
@@ -33,7 +36,6 @@ public class CanvasController : MonoBehaviour
         return instance;
     }
 
-
     void Update()
     {
         // Verificar se a tecla I foi pressionada
@@ -44,15 +46,18 @@ public class CanvasController : MonoBehaviour
             mainObject.SetActive(mainObjectVisible);
         }
         List<int> itensUsados = new();
+
         // Verificar se uma nova string foi salva no PlayerPrefs
         for (int i = 0; i < ItemSaver.GetInstance().stringList.Count; i++)
         {
-            for (int j = 0; j < uiItems.Length; j++)
+            for (j = 0; j < uiItems.Length; j++)
             {
                 if (ItemSaver.GetInstance().stringList[i] == uiItems[j].key)
                 {
+                    //InventoryScript.onDIE?.Invoke(coloque o int que vai passar pelo evento);
                     uiItems[j].image.SetActive(true);
                     itensUsados.Add(j);
+                    uiItems[j].slot = j;
                 }
             }
         }
@@ -72,4 +77,5 @@ public class UIItem
 {
     public GameObject image;
     public string key;
+    public int slot;
 }
