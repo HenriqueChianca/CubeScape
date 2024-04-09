@@ -97,7 +97,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tecla_preta
+      name: tecla3
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 875
+        width: 263
+        height: 1150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179234c9f3c5453498d671674914e71c
+      internalID: -1811218333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tecla_ppreta
       rect:
         serializedVersion: 2
         x: 1200
@@ -111,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e7a763e9bdfb9d43bb778760bc46b0f
-      internalID: -1816278258
+      spriteID: aa78fdaf1dfc7294284f3759d29a4c16
+      internalID: 1907172476
       vertices: []
       indices: 
       edges: []
@@ -132,7 +153,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df9b9257f3d97ae4fb756168cfe93bc8
+      spriteID: e04df4472af72894e85179c3279a6324
       internalID: 36027169
       vertices: []
       indices: 
@@ -153,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1320b4c8e17b2449a0777ea6b85b19d
+      spriteID: c713c0092e7d32448ba71c4be13cc1d1
       internalID: -855142196
       vertices: []
       indices: 
@@ -172,7 +193,8 @@ TextureImporter:
     nameFileIdTable:
       tecla1: 36027169
       tecla2: -855142196
-      tecla_preta: -1816278258
+      tecla3: -1811218333
+      tecla_ppreta: 1907172476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
