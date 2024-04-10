@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+>>>>>>> origin/Blastboy
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -207,7 +211,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 613042442}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -20.843}
+<<<<<<< HEAD
 --- !u!1 &26030802
+=======
+--- !u!1 &51994637
+>>>>>>> origin/Blastboy
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,6 +223,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 26030803}
   - component: {fileID: 26030805}
   - component: {fileID: 26030804}
@@ -435,10 +444,25 @@ GameObject:
   m_IsActive: 0
 --- !u!4 &59668048
 Transform:
+=======
+  - component: {fileID: 51994640}
+  - component: {fileID: 51994639}
+  - component: {fileID: 51994638}
+  m_Layer: 0
+  m_Name: GavetaCimaColisionBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &51994638
+BoxCollider:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 59668047}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
@@ -455,6 +479,9 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59668047}
+=======
+  m_GameObject: {fileID: 51994637}
+>>>>>>> origin/Blastboy
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -466,16 +493,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &59668050
 MeshRenderer:
+=======
+  serializedVersion: 3
+  m_Size: {x: 1.2163912, y: 0.3053691, z: 1}
+  m_Center: {x: -0.034498926, y: -0.03263175, z: 0}
+--- !u!114 &51994639
+MonoBehaviour:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 59668047}
   m_Enabled: 1
   m_CastShadows: 1
@@ -514,12 +550,36 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &59668051
 MeshFilter:
+=======
+  m_GameObject: {fileID: 51994637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 51994637}
+  objectToActivate: {fileID: 582894505}
+--- !u!4 &51994640
+Transform:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 59668047}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_GameObject: {fileID: 51994637}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 2.054839, y: 5.696775, z: -0.3322571}
+  m_LocalScale: {x: 3.2258067, y: 3.2258067, z: 3.2258067}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &102379938
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +615,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -19.999512, y: 0}
+=======
+  m_AnchoredPosition: {x: -19.999756, y: 0}
+>>>>>>> origin/Blastboy
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &102379940
@@ -640,6 +704,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102379938}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &131785127
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,6 +911,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165176339}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &182756453
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,8 +965,13 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< HEAD
   m_Size: {x: 0.17118756, y: 0.29183722, z: 0.3461671}
   m_Center: {x: 0.038374, y: 0.17427778, z: -0.021673441}
+=======
+  m_Size: {x: 0.21546936, y: 0.39305282, z: 0.3461671}
+  m_Center: {x: 0.03900659, y: 0.17554295, z: -0.021673441}
+>>>>>>> origin/Blastboy
 --- !u!4 &182756456
 Transform:
   m_ObjectHideFlags: 0
@@ -908,12 +980,21 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182756453}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0.6354839, y: 8.5806465, z: -0.10924032}
   m_LocalScale: {x: 3.2258067, y: 3.2258067, z: 3.2258067}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1236954023}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.13808084, y: 3.0453577, z: 4.7938647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+>>>>>>> origin/Blastboy
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &219664415
 GameObject:
@@ -990,6 +1071,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219664415}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &223080132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1200,8 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &224125952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,7 +1312,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -9}
+=======
+  m_AnchoredPosition: {x: 0, y: -9.000122}
+>>>>>>> origin/Blastboy
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &237006035
@@ -1323,6 +1411,11 @@ GameObject:
   m_Component:
   - component: {fileID: 268733186}
   - component: {fileID: 268733185}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 268733188}
+  - component: {fileID: 268733189}
+>>>>>>> origin/Blastboy
   m_Layer: 0
   m_Name: Rasgo_Click
   m_TagString: Untagged
@@ -1390,6 +1483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268733184}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.8461559, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1400,10 +1494,23 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &269411858
 GameObject:
+=======
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -4.999, y: 0.988, z: 4.586}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 613042442}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &268733188
+BoxCollider:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269411859}
@@ -1438,11 +1545,30 @@ RectTransform:
   m_SizeDelta: {x: -741.8609, y: -235.1333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269411860
+=======
+  m_GameObject: {fileID: 268733184}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.510001, y: 7.9099994, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &268733189
+>>>>>>> origin/Blastboy
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 269411858}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1471,6 +1597,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269411858}
   m_CullTransparentMesh: 1
+=======
+  m_GameObject: {fileID: 268733184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 268733184}
+  objectToActivate: {fileID: 1219266800}
+>>>>>>> origin/Blastboy
 --- !u!1 &276541399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1772,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &294936064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +1932,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a1f593dc0e692046a29f7e5d47705cc, type: 3}
   - {fileID: 8300000, guid: 96cf9aced148e7c48943a8c15cd425d6, type: 3}
   KeySoundIndex: 6
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &336753930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,7 +2011,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336753930}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &403588600
+=======
+--- !u!1 &351557881
+>>>>>>> origin/Blastboy
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1880,23 +2023,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 403588601}
   - component: {fileID: 403588604}
   - component: {fileID: 403588603}
   - component: {fileID: 403588602}
   m_Layer: 5
   m_Name: BotaoVoltar
+=======
+  - component: {fileID: 351557882}
+  - component: {fileID: 351557883}
+  - component: {fileID: 351557884}
+  m_Layer: 0
+  m_Name: Aberto
+>>>>>>> origin/Blastboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!224 &403588601
 RectTransform:
+=======
+--- !u!4 &351557882
+Transform:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 403588600}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1912,10 +2069,24 @@ RectTransform:
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &403588602
 MonoBehaviour:
+=======
+  m_GameObject: {fileID: 351557881}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!212 &351557883
+SpriteRenderer:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 403588600}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2043,17 +2214,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+=======
+  m_GameObject: {fileID: 351557881}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+>>>>>>> origin/Blastboy
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+<<<<<<< HEAD
   m_RayTracingMode: 2
+=======
+  m_RayTracingMode: 0
+>>>>>>> origin/Blastboy
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 10ec1a6984f13f04f945fea5ab67be2a, type: 2}
+=======
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> origin/Blastboy
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2066,7 +2251,11 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
+<<<<<<< HEAD
   m_SelectedEditorRenderState: 3
+=======
+  m_SelectedEditorRenderState: 0
+>>>>>>> origin/Blastboy
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -2074,13 +2263,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &414892712
 MeshFilter:
+=======
+  m_Sprite: {fileID: -400731168, guid: 990e9faad80b24943a8ec6e2dc9e6600, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 18.05, y: 18.22}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &351557884
+MonoBehaviour:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 414892709}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &414892713
@@ -2098,6 +2304,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 351557881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 0}
+  objectToActivate: {fileID: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &432073416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2598,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465289231}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &490728951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,6 +2705,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490728951}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &549867574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,6 +2825,93 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+<<<<<<< HEAD
+=======
+--- !u!1 &555088907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555088908}
+  - component: {fileID: 555088909}
+  m_Layer: 0
+  m_Name: Direita
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &555088908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555088907}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!212 &555088909
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555088907}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 408461218, guid: 990e9faad80b24943a8ec6e2dc9e6600, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 18.05, y: 18.23}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+>>>>>>> origin/Blastboy
 --- !u!1 &575889212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,6 +2987,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575889212}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
+--- !u!1 &582894505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582894506}
+  - component: {fileID: 582894507}
+  - component: {fileID: 582894509}
+  - component: {fileID: 582894508}
+  m_Layer: 0
+  m_Name: GavetaCima
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &582894506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582894505}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5167901, y: 0.014810344, z: 0.007186401, w: 0.85595393}
+  m_LocalPosition: {x: 2.1600003, y: 5.4300003, z: 2.0300004}
+  m_LocalScale: {x: 0.43464503, y: 0.43464503, z: 0.43464503}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0.122, y: -180, z: 0}
+--- !u!212 &582894507
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582894505}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -221660400, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.07, y: 7.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!65 &582894508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582894505}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.07, y: 7.2400017, z: 0.20000048}
+  m_Center: {x: 0, y: 0, z: 0.0000009536743}
+--- !u!114 &582894509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582894505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 582894505}
+  objectToActivate: {fileID: 51994637}
+>>>>>>> origin/Blastboy
 --- !u!1 &597369021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,7 +3123,10 @@ GameObject:
   - component: {fileID: 597369024}
   - component: {fileID: 597369023}
   - component: {fileID: 597369022}
+<<<<<<< HEAD
   - component: {fileID: 597369026}
+=======
+>>>>>>> origin/Blastboy
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2783,10 +3216,13 @@ RectTransform:
   - {fileID: 1980525157}
   - {fileID: 2357357311629732206}
   - {fileID: 432073417}
+<<<<<<< HEAD
   - {fileID: 2032874546}
   - {fileID: 1259777297}
   - {fileID: 1847655898}
   - {fileID: 1762979809}
+=======
+>>>>>>> origin/Blastboy
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2794,6 +3230,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!114 &597369026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2971,6 +3408,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a1f593dc0e692046a29f7e5d47705cc, type: 3}
   - {fileID: 8300000, guid: 96cf9aced148e7c48943a8c15cd425d6, type: 3}
   KeySoundIndex: 1
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &613042440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3533,77 @@ MonoBehaviour:
   ItemName: ChaveDourada
   audioClip: {fileID: 8300000, guid: dce546059f5710648aaa517d2a36a1a8, type: 3}
   audioSource: {fileID: 1581381645}
+<<<<<<< HEAD
+=======
+--- !u!1 &624294930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624294933}
+  - component: {fileID: 624294932}
+  - component: {fileID: 624294931}
+  m_Layer: 0
+  m_Name: OpenSafeColsionBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &624294931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624294930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 624294930}
+  objectToActivate: {fileID: 790494807}
+--- !u!65 &624294932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624294930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &624294933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624294930}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.653, y: 1.303, z: 4.771}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &636119141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,8 +3635,12 @@ Transform:
   m_LocalPosition: {x: -10, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+<<<<<<< HEAD
   m_Children:
   - {fileID: 1219266802}
+=======
+  m_Children: []
+>>>>>>> origin/Blastboy
   m_Father: {fileID: 1031287776}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 90}
 --- !u!64 &636119143
@@ -3201,7 +3715,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636119141}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &640573879
+=======
+--- !u!1 &661825192
+>>>>>>> origin/Blastboy
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3209,6 +3727,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 640573880}
   - component: {fileID: 640573883}
   - component: {fileID: 640573882}
@@ -3342,10 +3861,25 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &657927228
 Transform:
+=======
+  - component: {fileID: 661825195}
+  - component: {fileID: 661825194}
+  - component: {fileID: 661825193}
+  m_Layer: 0
+  m_Name: GavetaBaixoColisionBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &661825193
+BoxCollider:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 657927227}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
@@ -3362,6 +3896,9 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657927227}
+=======
+  m_GameObject: {fileID: 661825192}
+>>>>>>> origin/Blastboy
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3373,16 +3910,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &657927230
 MeshRenderer:
+=======
+  serializedVersion: 3
+  m_Size: {x: 1.2163912, y: 0.3053691, z: 1}
+  m_Center: {x: -0.034498926, y: -0.03263175, z: 0}
+--- !u!114 &661825194
+MonoBehaviour:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 657927227}
   m_Enabled: 1
   m_CastShadows: 1
@@ -3421,12 +3967,36 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &657927231
 MeshFilter:
+=======
+  m_GameObject: {fileID: 661825192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 661825192}
+  objectToActivate: {fileID: 1100866965}
+--- !u!4 &661825195
+Transform:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 657927227}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_GameObject: {fileID: 661825192}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 2.054839, y: 3.25, z: -0.3322571}
+  m_LocalScale: {x: 3.2258067, y: 3.2258067, z: 3.2258067}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &719605923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,7 +4072,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719605923}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &768780915
+=======
+--- !u!1 &727298977
+>>>>>>> origin/Blastboy
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3510,23 +4084,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 768780916}
   - component: {fileID: 768780919}
   - component: {fileID: 768780918}
   - component: {fileID: 768780917}
   m_Layer: 0
   m_Name: DireitaMetal
+=======
+  - component: {fileID: 727298979}
+  - component: {fileID: 727298978}
+  m_Layer: 0
+  m_Name: Fechado
+>>>>>>> origin/Blastboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &768780916
 Transform:
+=======
+--- !u!212 &727298978
+SpriteRenderer:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 768780915}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
@@ -3568,17 +4155,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+=======
+  m_GameObject: {fileID: 727298977}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+>>>>>>> origin/Blastboy
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+<<<<<<< HEAD
   m_RayTracingMode: 2
+=======
+  m_RayTracingMode: 0
+>>>>>>> origin/Blastboy
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: cdad1a7d5aab75849b34d3dd239a0295, type: 2}
+=======
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> origin/Blastboy
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3591,7 +4192,11 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
+<<<<<<< HEAD
   m_SelectedEditorRenderState: 3
+=======
+  m_SelectedEditorRenderState: 0
+>>>>>>> origin/Blastboy
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -3599,15 +4204,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &768780919
 MeshFilter:
+=======
+  m_Sprite: {fileID: 2015004063, guid: 990e9faad80b24943a8ec6e2dc9e6600, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 18.04, y: 18.22}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &727298979
+Transform:
+>>>>>>> origin/Blastboy
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 768780915}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_GameObject: {fileID: 727298977}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &778689322
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,6 +4347,251 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778689322}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &790494807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 790494809}
+  - component: {fileID: 790494808}
+  - component: {fileID: 790494811}
+  - component: {fileID: 790494810}
+  m_Layer: 0
+  m_Name: OpenSafeZoom_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &790494808
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790494807}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1007593117, guid: ecaa5ea187e69c849b1d8aa7e50e0e78, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 29.34, y: 21.599998}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &790494809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790494807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.873, y: 1.325, z: 4.337}
+  m_LocalScale: {x: 0.05946272, y: 0.05946272, z: 0.05946272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790494810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790494807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 790494807}
+  objectToActivate: {fileID: 624294930}
+--- !u!65 &790494811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790494807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 29.34, y: 21.599998, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &813656563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 813656564}
+  - component: {fileID: 813656565}
+  - component: {fileID: 813656567}
+  - component: {fileID: 813656566}
+  m_Layer: 0
+  m_Name: GavetaMeio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &813656564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813656563}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5167901, y: 0.014810344, z: 0.007186401, w: 0.85595393}
+  m_LocalPosition: {x: 2.14, y: 4.11, z: 1.64}
+  m_LocalScale: {x: 0.43464503, y: 0.43464503, z: 0.43464503}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0.122, y: -180, z: 0}
+--- !u!212 &813656565
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813656563}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -221660400, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.07, y: 7.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &813656566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813656563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 813656563}
+  objectToActivate: {fileID: 936091281}
+--- !u!65 &813656567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813656563}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.07, y: 7.2400017, z: 0.20000048}
+  m_Center: {x: 0.00000047683716, y: 0, z: 0.0000009536743}
+>>>>>>> origin/Blastboy
 --- !u!1 &832852480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,7 +4668,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: d0531af3f9b698b4d95f8e77ad3c4fca, type: 2}
+=======
+  - {fileID: 2100000, guid: e7e27c6d01c14da46a9ac629ee1bc4e2, type: 2}
+>>>>>>> origin/Blastboy
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3919,7 +4801,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< HEAD
 --- !u!1 &905015887
+=======
+--- !u!1 &907000171
+>>>>>>> origin/Blastboy
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3927,6 +4813,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 905015888}
   - component: {fileID: 905015891}
   - component: {fileID: 905015890}
@@ -4089,17 +4976,29 @@ GameObject:
   - component: {fileID: 919867323}
   m_Layer: 0
   m_Name: Estante
+=======
+  - component: {fileID: 907000172}
+  - component: {fileID: 907000173}
+  m_Layer: 0
+  m_Name: Esquerda
+>>>>>>> origin/Blastboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
 --- !u!4 &919867323
+=======
+  m_IsActive: 0
+--- !u!4 &907000172
+>>>>>>> origin/Blastboy
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 919867322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4115,6 +5014,136 @@ Transform:
   - {fileID: 490728952}
   - {fileID: 543450652936962459}
   m_Father: {fileID: 0}
+=======
+  m_GameObject: {fileID: 907000171}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!212 &907000173
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907000171}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1089100176, guid: 990e9faad80b24943a8ec6e2dc9e6600, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 18.04, y: 18.23}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &936091281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936091284}
+  - component: {fileID: 936091283}
+  - component: {fileID: 936091282}
+  m_Layer: 0
+  m_Name: GavetaMeioColisionBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &936091282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936091281}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2163912, y: 0.3053691, z: 1}
+  m_Center: {x: -0.034498926, y: -0.03263175, z: 0}
+--- !u!114 &936091283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936091281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 936091281}
+  objectToActivate: {fileID: 813656563}
+--- !u!4 &936091284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936091281}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 2.054839, y: 4.49, z: -0.3322571}
+  m_LocalScale: {x: 3.2258067, y: 3.2258067, z: 3.2258067}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+>>>>>>> origin/Blastboy
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987437298
 GameObject:
@@ -4151,7 +5180,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0.00012207031, y: 62}
+=======
+  m_AnchoredPosition: {x: 0.00012207031, y: 62.0001}
+>>>>>>> origin/Blastboy
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &987437300
@@ -4379,6 +5412,130 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036954305}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &1100866965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100866966}
+  - component: {fileID: 1100866967}
+  - component: {fileID: 1100866969}
+  - component: {fileID: 1100866968}
+  m_Layer: 0
+  m_Name: GavetaBaixo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1100866966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100866965}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5167901, y: 0.014810344, z: 0.007186401, w: 0.85595393}
+  m_LocalPosition: {x: 2.14, y: 2.93, z: 1.77}
+  m_LocalScale: {x: 0.43464503, y: 0.43464503, z: 0.43464503}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236954023}
+  m_LocalEulerAnglesHint: {x: 0.122, y: -180, z: 0}
+--- !u!212 &1100866967
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100866965}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -221660400, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.07, y: 7.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1100866968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100866965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 1100866965}
+  objectToActivate: {fileID: 661825192}
+--- !u!65 &1100866969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100866965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.07, y: 7.2400017, z: 0.20000048}
+  m_Center: {x: 0.0000009536743, y: 0.0000019073486, z: -0.0000009536743}
+>>>>>>> origin/Blastboy
 --- !u!1 &1104449519
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,6 +5642,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104449519}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &1126970920
 GameObject:
   m_ObjectHideFlags: 0
@@ -4803,6 +5961,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a1f593dc0e692046a29f7e5d47705cc, type: 3}
   - {fileID: 8300000, guid: 96cf9aced148e7c48943a8c15cd425d6, type: 3}
   KeySoundIndex: 7
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1219266800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4813,8 +5973,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1219266802}
   - component: {fileID: 1219266801}
+<<<<<<< HEAD
   - component: {fileID: 1219266804}
   - component: {fileID: 1219266803}
+=======
+  - component: {fileID: 1219266803}
+  - component: {fileID: 1219266804}
+>>>>>>> origin/Blastboy
   m_Layer: 0
   m_Name: Rasgo
   m_TagString: Untagged
@@ -4882,6 +6047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219266800}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -4.826, y: 0.0009994507, z: 4.012}
   m_LocalScale: {x: 0.13000001, y: 0.12999998, z: 0.13}
@@ -4891,6 +6057,30 @@ Transform:
   m_Father: {fileID: 636119142}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1219266803
+=======
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -4.999, y: 0.988, z: 4.826}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1219266803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219266800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474c07cca428cdf4dab498f16f2bc0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToToggle: {fileID: 1219266800}
+  objectToActivate: {fileID: 268733184}
+--- !u!65 &1219266804
+>>>>>>> origin/Blastboy
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4909,6 +6099,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< HEAD
   m_Size: {x: 5.964686, y: 7.91, z: 4.9926686}
   m_Center: {x: 0.6001624, y: 0, z: 0.7432289}
 --- !u!114 &1219266804
@@ -4925,6 +6116,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Desativar: {fileID: 1219266800}
   Ativar: {fileID: 268733184}
+=======
+  m_Size: {x: 2.8800004, y: 7.9099994, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &1236954022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,6 +6149,7 @@ Transform:
   m_LocalScale: {x: 0.31, y: 0.31, z: 0.31}
   m_ConstrainProportionsScale: 1
   m_Children:
+<<<<<<< HEAD
   - {fileID: 657927228}
   - {fileID: 1299133298}
   - {fileID: 59668048}
@@ -5085,6 +6281,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259777296}
   m_CullTransparentMesh: 1
+=======
+  - {fileID: 727298979}
+  - {fileID: 555088908}
+  - {fileID: 907000172}
+  - {fileID: 351557882}
+  - {fileID: 51994640}
+  - {fileID: 582894506}
+  - {fileID: 936091284}
+  - {fileID: 813656564}
+  - {fileID: 661825195}
+  - {fileID: 1100866966}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+>>>>>>> origin/Blastboy
 --- !u!1 &1270852801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5142,9 +6352,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_Sprite: {fileID: 1810974575, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
+=======
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+>>>>>>> origin/Blastboy
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -5160,6 +6376,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270852801}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1272200387
 GameObject:
   m_ObjectHideFlags: 0
@@ -5372,6 +6589,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299133297}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1303349816
 GameObject:
   m_ObjectHideFlags: 0
@@ -5407,7 +6626,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 17.999512, y: 0}
+=======
+  m_AnchoredPosition: {x: 17.999756, y: 0}
+>>>>>>> origin/Blastboy
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1303349818
@@ -5527,7 +6750,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 62}
+=======
+  m_AnchoredPosition: {x: 0, y: 62.000084}
+>>>>>>> origin/Blastboy
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1329273959
@@ -5612,6 +6839,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329273957}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1340126765
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,6 +7570,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499454307}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1581381641
 GameObject:
   m_ObjectHideFlags: 0
@@ -6351,6 +7581,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1581381643}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 1581381642}
+>>>>>>> origin/Blastboy
   - component: {fileID: 1581381644}
   - component: {fileID: 1581381645}
   - component: {fileID: 1581381646}
@@ -6361,6 +7595,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &1581381642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581381641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5dfb044049d6e45a036066a7204022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainObject: {fileID: 1787491597}
+  uiItems:
+  - image: {fileID: 1270852801}
+    key: ChavePrateada
+  - image: {fileID: 2022326178}
+    key: ChaveDourada
+>>>>>>> origin/Blastboy
 --- !u!4 &1581381643
 Transform:
   m_ObjectHideFlags: 0
@@ -6502,6 +7757,7 @@ MonoBehaviour:
   rightButton: {fileID: 102379940}
   upButton: {fileID: 237006035}
   downButton: {fileID: 1980525158}
+<<<<<<< HEAD
 --- !u!1 &1696386847
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,6 +7917,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a1f593dc0e692046a29f7e5d47705cc, type: 3}
   - {fileID: 8300000, guid: 96cf9aced148e7c48943a8c15cd425d6, type: 3}
   KeySoundIndex: 4
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1702747836
 GameObject:
   m_ObjectHideFlags: 0
@@ -6767,6 +8025,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702747836}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &1707819674
 GameObject:
   m_ObjectHideFlags: 0
@@ -7068,6 +8327,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758829169}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1760730787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7186,6 +8447,7 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+<<<<<<< HEAD
 --- !u!1 &1762979808
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,6 +8561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1762979810}
   booleanParameterName: activate
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1787491597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7316,7 +8580,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> origin/Blastboy
 --- !u!224 &1787491598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7376,6 +8644,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787491597}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1808709214
 GameObject:
   m_ObjectHideFlags: 0
@@ -7814,6 +9083,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847655897}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1856096814
 GameObject:
   m_ObjectHideFlags: 0
@@ -7889,6 +9160,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856096814}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1923480337
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,6 +9426,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a1f593dc0e692046a29f7e5d47705cc, type: 3}
   - {fileID: 8300000, guid: 96cf9aced148e7c48943a8c15cd425d6, type: 3}
   KeySoundIndex: 3
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1980525156
 GameObject:
   m_ObjectHideFlags: 0
@@ -8172,7 +9446,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> origin/Blastboy
 --- !u!224 &1980525157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8331,7 +9609,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_Sprite: {fileID: -461305602, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
+=======
+  m_Sprite: {fileID: 1482006273, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
+>>>>>>> origin/Blastboy
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8446,6 +9728,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026750046}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2032874545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8652,6 +9935,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a1f593dc0e692046a29f7e5d47705cc, type: 3}
   - {fileID: 8300000, guid: 96cf9aced148e7c48943a8c15cd425d6, type: 3}
   KeySoundIndex: 11
+=======
+>>>>>>> origin/Blastboy
 --- !u!114 &135318815558796791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8821,6 +10106,7 @@ RectTransform:
   m_AnchoredPosition: {x: 37.15333, y: -24.890112}
   m_SizeDelta: {x: 74.30666, y: 49.780224}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!4 &543450652936962459
 Transform:
   m_ObjectHideFlags: 0
@@ -8837,6 +10123,8 @@ Transform:
   - {fileID: 223080133}
   m_Father: {fileID: 919867323}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+=======
+>>>>>>> origin/Blastboy
 --- !u!224 &638283362696471104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8884,6 +10172,7 @@ RectTransform:
   m_AnchoredPosition: {x: 126.28027, y: 80.77551}
   m_SizeDelta: {x: 234.921, y: 79.7826}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &919132148751096609
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,6 +10191,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+>>>>>>> origin/Blastboy
 --- !u!224 &938028371265194729
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9175,6 +10466,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5416550281332984866}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!23 &1711813856350501620
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9217,6 +10509,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &1714655764063598846
 GameObject:
   m_ObjectHideFlags: 0
@@ -9885,6 +11179,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!33 &3469287836921630270
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9893,6 +11188,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148751096609}
   m_Mesh: {fileID: 7058075540641647668, guid: ba3c4379103bcb142a2dc1a2631a2c28, type: 3}
+=======
+>>>>>>> origin/Blastboy
 --- !u!1 &3538793920536550071
 GameObject:
   m_ObjectHideFlags: 0
@@ -11441,7 +12738,15 @@ SceneRoots:
   - {fileID: 284077612}
   - {fileID: 1031287776}
   - {fileID: 1236954023}
+<<<<<<< HEAD
   - {fileID: 1272200391}
   - {fileID: 414892713}
   - {fileID: 1398030807}
   - {fileID: 919867323}
+=======
+  - {fileID: 182756456}
+  - {fileID: 1219266802}
+  - {fileID: 268733186}
+  - {fileID: 624294933}
+  - {fileID: 790494809}
+>>>>>>> origin/Blastboy

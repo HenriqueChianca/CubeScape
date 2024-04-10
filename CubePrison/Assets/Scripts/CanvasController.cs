@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class CanvasController : MonoBehaviour
 {
+<<<<<<< HEAD
     private static CanvasController instance;
 
+=======
+>>>>>>> origin/Blastboy
     public GameObject mainObject; // Objeto principal a ser controlado
    // public GameObject[] additionalObjects; // Array de objetos adicionais a serem controlados
 
@@ -13,6 +16,7 @@ public class CanvasController : MonoBehaviour
 
     public UIItem[] uiItems;
 
+<<<<<<< HEAD
     private void Awake()
     {
         // Garantir que apenas uma instância da classe exista
@@ -34,6 +38,8 @@ public class CanvasController : MonoBehaviour
     }
 
 
+=======
+>>>>>>> origin/Blastboy
     void Update()
     {
         // Verificar se a tecla I foi pressionada
