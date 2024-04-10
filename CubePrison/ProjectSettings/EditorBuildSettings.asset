@@ -4,5 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/Jogo.unity
+    guid: 78e37692f11ae7c4aa0f92b54b3d6d77
+=======
+    path: Assets/Scenes/CenaTstes.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+>>>>>>> origin/Blastboy
   m_configObjects: {}
