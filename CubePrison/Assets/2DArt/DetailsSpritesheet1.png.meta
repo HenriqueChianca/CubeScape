@@ -105,11 +105,7 @@ TextureImporter:
         width: 226
         height: 195
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,11 +126,7 @@ TextureImporter:
         width: 651
         height: 791
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,11 +147,7 @@ TextureImporter:
         width: 288
         height: 791
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,11 +168,7 @@ TextureImporter:
         width: 158
         height: 394
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,11 +189,7 @@ TextureImporter:
         width: 158
         height: 395
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,11 +210,7 @@ TextureImporter:
         width: 270
         height: 306
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,11 +231,7 @@ TextureImporter:
         width: 286
         height: 187
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,11 +252,7 @@ TextureImporter:
         width: 1007
         height: 724
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,11 +273,7 @@ TextureImporter:
         width: 274
         height: 492
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -330,11 +294,7 @@ TextureImporter:
         width: 286
         height: 187
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,11 +315,7 @@ TextureImporter:
         width: 1677
         height: 147
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/Blastboy
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,10 +338,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD
       Bench: 1233505734
-=======
->>>>>>> origin/Blastboy
       BotaoCofre: -1432545013
       BotaoLateral: 1281211073
       Botao_CLICK: 1535831179
