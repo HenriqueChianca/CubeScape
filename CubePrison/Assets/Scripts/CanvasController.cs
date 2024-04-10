@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,9 +13,11 @@ public class CanvasController : MonoBehaviour
 
     public GameObject mainObject; // Objeto principal a ser controlado
 
-    public bool mainObjectVisible = false, SavingInInventory; // Flag para controlar a visibilidade do objeto principal
+    public bool mainObjectVisible = false, SavingInInventory, SavedSlot = false; // Flag para controlar a visibilidade do objeto principal
 
     public UIItem[] uiItems;
+
+    public int[] InventorySlot = new int[6];
 
     private void Awake()
     {
@@ -54,10 +57,17 @@ public class CanvasController : MonoBehaviour
             {
                 if (ItemSaver.GetInstance().stringList[i] == uiItems[j].key)
                 {
-                    //InventoryScript.onDIE?.Invoke(coloque o int que vai passar pelo evento);
                     uiItems[j].image.SetActive(true);
                     itensUsados.Add(j);
                     uiItems[j].slot = j;
+
+                    if (!SavedSlot)
+                    {
+                        SavedSlot = true;
+                        InventorySlot[j] = j;
+                        SavedSlot = false;
+                    }
+                        
                 }
             }
         }
@@ -70,6 +80,14 @@ public class CanvasController : MonoBehaviour
             }
         }
     }
+
+    public void OnButtonClick(GameObject item)
+    {
+        int index = item.transform.GetSiblingIndex();
+        uiItems[index].selected = !uiItems[index].selected;
+        print("pinto");
+    }
+
 }
 
 [System.Serializable]
@@ -78,4 +96,6 @@ public class UIItem
     public GameObject image;
     public string key;
     public int slot;
+
+    public bool selected = false;
 }
