@@ -96,6 +96,5 @@ public class UIItem
     public GameObject image;
     public string key;
     public int slot;
-
     public bool selected = false;
 }
