@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,52 +6,55 @@ public class ItemInteraction : MonoBehaviour
 {
     public AudioClip audioClip;
     public AudioSource audioSource;
-    public string Requirement;
-    // Start is called before the first frame update
+    public string Requirement, ItemPP;
+    
+    // Referência para o CanvasController
+    public CanvasController canvasController;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Obtenha a referência do CanvasController
+        canvasController = CanvasController.GetInstance();
     }
 
     void OnMouseDown()
     {
-        // Verifique se o botão pressionado é o botão esquerdo (botão 0)
         if (Input.GetMouseButtonDown(0))
         {
+            // Verifique se o item necessário para a interação está no inventário
             foreach (string savedString in ItemSaver.GetInstance().stringList)
             {
                 if (savedString == Requirement)
                 {
-                    print("String encontrada");
-
-                    ItemSaver itemSaver = ItemSaver.GetInstance();
-
-                     // Procurar o índice da string correspondente à variável Requirement na lista de strings do ItemSaver
-                    int indexToRemove = itemSaver.stringList.IndexOf(Requirement);
-
-                    // Se o índice for encontrado, remova a string correspondente do PlayerPrefs
-                    if (indexToRemove != -1)
+                    // Verifique se o item necessário está selecionado no inventário
+                    for (int i = 0; i < canvasController.uiItems.Length; i++)
                     {
-                        itemSaver.RemoveString(indexToRemove);
-                        print("String removida com sucesso do PlayerPrefs.");
-                        if (!audioSource.isPlaying)
+                        if (canvasController.uiItems[i].key == Requirement && canvasController.uiItems[i].selected)
                         {
-                            audioSource.clip = audioClip;
-                            audioSource.Play();
+                            // Realize a interação apenas se o item estiver selecionado
+                            print("Item necessário encontrado e selecionado.");
+                            
+                            // Proceda com a interação aqui...
+
+                            // Remova o item do inventário após a interação
+                            int indexToRemove = ItemSaver.GetInstance().stringList.IndexOf(Requirement);
+                            if (indexToRemove != -1)
+                            {
+                                ItemSaver.GetInstance().RemoveString(indexToRemove);
+                                print("Item removido do inventário após interação.");
+                            }
+
+                            // Tocar o áudio
+                            if (!audioSource.isPlaying)
+                            {
+                                audioSource.clip = audioClip;
+                                audioSource.Play();
+                            }
+
+                            break;
                         }
-                        break;
                     }
-                    else
-                    {
-                        print("String correspondente não encontrada na lista de strings.");
-                        break;
-                    }
+                    break;
                 }
             }
         }
