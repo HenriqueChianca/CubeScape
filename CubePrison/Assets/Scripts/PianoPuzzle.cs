@@ -9,12 +9,11 @@ public class PianoPuzzle : MonoBehaviour
     public List<int> PianoKeysRequirement = new List<int>();
 
     public List<int> PianoKeysPlayed = new List<int>();
-    public int PianoCount = 0;
-    
+
     // Start is called before the first frame update
     private void Awake()
     {
-        // Garantir que apenas uma instância da classe exista
+        // Garantir que apenas uma instância da classe existaaaaaa
         if (instance == null)
         {
             instance = this;
@@ -50,14 +49,6 @@ public class PianoPuzzle : MonoBehaviour
 
     private void CompareArraysAndExecuteFunction()
     {
-        // Verificar se os dois arrays têm o mesmo número de elementos
-        /*if (PianoKeysRequirement.Count != PianoKeysPlayed.Count)
-        {
-            // Se os arrays tiverem números diferentes de elementos, limpar o array PianoKeysPlayed
-            PianoKeysPlayed.Clear();
-            return;
-        }*/
-
         // Verificar se os elementos dos dois arrays são iguais
         for (int i = 0; i < PianoKeysPlayed.Count; i++)
         {
@@ -68,15 +59,21 @@ public class PianoPuzzle : MonoBehaviour
                 return;
             }
         }
-        if (PianoKeysPlayed[8] != null && PianoKeysRequirement[8] != PianoKeysPlayed[8])
-        {
-            ExecuteFunction();
-        }
+        
+        if (PianoKeysPlayed.Count >= 9 && PianoKeysRequirement.Count >= 9)
+            {
+                if (PianoKeysRequirement[8] == PianoKeysPlayed[8])
+                {
+
+                    ExecuteFunction();
+                }
+            }
     }
 
     private void ExecuteFunction()
     {
-        // Coloque aqui a lógica que você deseja executar quando os arrays forem iguais
         Debug.Log("Arrays iguais! Executando função...");
+        print("doidera");
+        CrawlSpaceController.GetInstance().OpenCrawlSpace();
     }
 }
