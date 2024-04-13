@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class ClickMe : MonoBehaviour
 {
+    public AudioClip audioClip;
+    public AudioSource audioSource;
     public GameObject Desativar, Ativar;
+
+    public float WaitForSeconds;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +23,19 @@ public class ClickMe : MonoBehaviour
 
     void OnMouseDown()
     {
-        // Verifique se o botão pressionado é o botão esquerdo (botão 0)
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ativar.SetActive(true);
-            Desativar.SetActive(false);
-        }
+        StartCoroutine(Interaction());
+    }
+
+    IEnumerator Interaction()
+    {
+        if (!audioSource.isPlaying)
+            {
+                audioSource.clip = audioClip;
+                audioSource.Play();
+            }
+        yield return new WaitForSeconds(WaitForSeconds);
+
+        Ativar.SetActive(true);
+        Desativar.SetActive(false);
     }
 }

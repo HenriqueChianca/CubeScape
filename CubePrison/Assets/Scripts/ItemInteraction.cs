@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemInteraction : MonoBehaviour
 {
-    public AudioClip audioClip;
+    public AudioClip audioClip, BadAudioClip;
     public AudioSource audioSource;
     public string Requirement, ItemPP;
     
@@ -21,6 +21,7 @@ public class ItemInteraction : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            print("clicou");
             // Verifique se o item necessário para a interação está no inventário
             foreach (string savedString in ItemSaver.GetInstance().stringList)
             {
@@ -55,6 +56,15 @@ public class ItemInteraction : MonoBehaviour
                         }
                     }
                     break;
+                }
+
+                else if(savedString != Requirement || savedString == null)
+                {
+                    if (!audioSource.isPlaying)
+                    {
+                        audioSource.clip = BadAudioClip;
+                        audioSource.Play();
+                    }
                 }
             }
         }

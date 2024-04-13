@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PianoController : MonoBehaviour
@@ -5,6 +7,8 @@ public class PianoController : MonoBehaviour
     public AudioClip[] pianoSounds;
     private AudioSource audioSource;
     public int KeySoundIndex = 0;
+
+    //PianoPuzzle puzzleInstance = PianoPuzzle.GetInstance();
 
     void Start()
     {
@@ -24,6 +28,9 @@ public class PianoController : MonoBehaviour
         {
             // Toca o áudio correspondente ao índice KeySoundIndex
             audioSource.PlayOneShot(pianoSounds[KeySoundIndex]);
+            
+            PianoPuzzle.GetInstance().AddIntToArray(KeySoundIndex);
+            
         }
         else
         {

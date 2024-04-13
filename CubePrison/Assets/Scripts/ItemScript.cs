@@ -21,7 +21,7 @@ public class ItemScript : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         // Verifique se o botão pressionado é o botão esquerdo (botão 0)
         if (Input.GetMouseButtonDown(0))
@@ -34,5 +34,15 @@ public class ItemScript : MonoBehaviour
             ItemSaver.GetInstance().AddString(ItemName);
             gameObject.SetActive(false);
         }
+    }
+    
+    public void OnButtonClick()
+    {
+        if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        ItemSaver.GetInstance().AddString(ItemName);
+        gameObject.SetActive(false);
     }
 }
