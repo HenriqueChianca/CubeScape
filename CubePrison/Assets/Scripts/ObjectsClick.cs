@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectsClick : MonoBehaviour
 {
-
     public GameObject objectToToggle;
     public GameObject objectToActivate;
 
