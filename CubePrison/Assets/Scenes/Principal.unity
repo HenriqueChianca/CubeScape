@@ -879,6 +879,8 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: ccdf6fdc1c56fd043b1f03314ebc2dd0, type: 3}
   audioSource: {fileID: 1581381645}
   Requirement: ChaveDourada
+  ItemPP: 
+  canvasController: {fileID: 0}
 --- !u!65 &182756455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1372,7 +1374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 101705210, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1393,7 +1395,7 @@ Transform:
   m_GameObject: {fileID: 268733184}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.65, y: 1.61, z: 3.4}
+  m_LocalPosition: {x: -4.401, y: 0.021, z: 3.842}
   m_LocalScale: {x: 0.13000001, y: 0.12999998, z: 0.13}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3029,7 +3031,7 @@ GameObject:
   - component: {fileID: 613042442}
   - component: {fileID: 613042441}
   - component: {fileID: 613042444}
-  - component: {fileID: 613042443}
+  - component: {fileID: 613042445}
   m_Layer: 0
   m_Name: Chave
   m_TagString: Untagged
@@ -3098,15 +3100,30 @@ Transform:
   m_GameObject: {fileID: 613042440}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000014901161, y: 0.000000059604645, z: -0.23684467, w: 0.9715476}
-  m_LocalPosition: {x: -1.407693, y: 0.76153874, z: 0.009998794}
+  m_LocalPosition: {x: -1.16, y: 0.76153874, z: 0.009998794}
   m_LocalScale: {x: 1.0526297, y: 1.05263, z: 1.0526298}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 12801828}
   m_Father: {fileID: 268733186}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -27.401}
---- !u!65 &613042443
-BoxCollider:
+--- !u!114 &613042444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613042440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ece2a4ca2c4a54183263f7bde76a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: ChaveDourada
+  audioClip: {fileID: 8300000, guid: dce546059f5710648aaa517d2a36a1a8, type: 3}
+  audioSource: {fileID: 1581381645}
+--- !u!136 &613042445
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3123,24 +3140,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.2440672, y: 3.95, z: 0.8880773}
-  m_Center: {x: -0.058013026, y: 0.000002826793, z: -0.040476065}
---- !u!114 &613042444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613042440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ece2a4ca2c4a54183263f7bde76a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: ChaveDourada
-  audioClip: {fileID: 8300000, guid: dce546059f5710648aaa517d2a36a1a8, type: 3}
-  audioSource: {fileID: 1581381645}
+  serializedVersion: 2
+  m_Radius: 0.79000026
+  m_Height: 3.9500008
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.0000038146973, z: 0.000005722046}
 --- !u!1 &636119141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4910,7 +4914,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 784984751, guid: 30f4e1669f2c85c49a8c4e0141865168, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4931,7 +4935,7 @@ Transform:
   m_GameObject: {fileID: 1219266800}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.83, y: 0.65, z: 3.37}
+  m_LocalPosition: {x: -4.639, y: 0.021, z: 3.842}
   m_LocalScale: {x: 0.13000001, y: 0.12999998, z: 0.13}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4956,8 +4960,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.219818, y: 12.077541, z: 4.992666}
-  m_Center: {x: 2.8364384, y: 2.083771, z: 0.74322885}
+  m_Size: {x: 2.925857, y: 8.299751, z: 2.0877023}
+  m_Center: {x: 0.18946023, y: 0.19487602, z: -0.016073424}
 --- !u!114 &1219266804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5307,7 +5311,7 @@ Transform:
   m_GameObject: {fileID: 1272200387}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -3.43, y: 2.24, z: 0}
+  m_LocalPosition: {x: -4.12, y: 2.24, z: -0.11}
   m_LocalScale: {x: 0.86177814, y: 0.86177814, z: -0.86177814}
   m_ConstrainProportionsScale: 0
   m_Children: []
