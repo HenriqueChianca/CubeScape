@@ -51,7 +51,7 @@ public class ItemInteraction : MonoBehaviour
                                 audioSource.clip = audioClip;
                                 audioSource.Play();
                             }
-
+                            Destroy(gameObject);
                             break;
                         }
                     }

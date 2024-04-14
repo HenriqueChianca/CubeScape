@@ -5,20 +5,19 @@ using UnityEngine.UI;
 
 public class BotaoDScript : MonoBehaviour
 {
-    public GameObject objectToDisable;
+    public GameObject PianoToDisable, SafeToDisable;
 
-    void Start()
+    public void OnButtonClick()
     {
-        // Encontra o botão dentro do mesmo Canvas
-        Button button = GetComponent<Button>();
-
-        // Adiciona um listener para o evento de clique do botão
-        button.onClick.AddListener(DisableObject);
-    }
-
-    void DisableObject()
-    {
-        // Desativa o objeto do Canvas
-        objectToDisable.SetActive(false);
+        string buttonName = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
+        switch (buttonName)
+        {
+            case "PianoBackButton":
+                PianoToDisable.SetActive(false); 
+                break;
+            case "SafeBackButton":
+                SafeToDisable.SetActive(false);
+                break;
+        }
     }
 }
