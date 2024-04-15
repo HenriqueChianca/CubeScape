@@ -100,11 +100,11 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _AmbientLightStrenght: 0.45
+    - _AmbientLightStrenght: 0.41
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
-    - _CellSmoothness: 0.1
+    - _CellSmoothness: 0.05
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -114,11 +114,11 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FresneSize: 0.1
+    - _FresneSize: 2.1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LightingCutoff: 0.32
+    - _LightingCutoff: 0.23
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -126,7 +126,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 3.54
+    - _Smoothness: 2.73
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -136,11 +136,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.8962549, g: 0.8148468, b: 0.61050093, a: 1}
-    - _Color: {r: 0.8962549, g: 0.8148468, b: 0.61050093, a: 1}
-    - _DiffuseColor: {r: 0.8679245, g: 0.77763253, b: 0.5540524, a: 1}
+    - _BaseColor: {r: 0.755, g: 0.6386461, b: 0.53454, a: 1}
+    - _Color: {r: 0.755, g: 0.6386461, b: 0.53453994, a: 1}
+    - _DiffuseColor: {r: 0.75686276, g: 0.6392157, b: 0.53333336, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0.6037736, g: 0.5294191, b: 0.33985996, a: 1}
+    - _FresnelColor: {r: 0.52201253, g: 0.4917541, b: 0.4153118, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _SpecularColor: {r: 0.9685534, g: 0.8633275, b: 0.6731141, a: 1}
+    - _SpecularColor: {r: 0.6037736, g: 0.5237629, b: 0.42719823, a: 1}
   m_BuildTextureStacks: []

@@ -12,7 +12,8 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _SPECULAR_SETUP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -87,11 +88,11 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _AmbientLightStrenght: 1.57
+    - _AmbientLightStrenght: 0.55
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
-    - _CellSmoothness: 0.01
+    - _CellSmoothness: 0.05
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -101,11 +102,11 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FresneSize: 0.56
+    - _FresneSize: 0.35
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LightingCutoff: 0.01
+    - _LightingCutoff: 0.05
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -113,23 +114,23 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.96
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UVSec: 0
-    - _WorkflowMode: 1
+    - _WorkflowMode: 0
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.03433933, g: 0.09758535, b: 0.063011274, a: 1}
-    - _Color: {r: 0.03433933, g: 0.09758535, b: 0.063011274, a: 1}
-    - _DiffuseColor: {r: 0.03529412, g: 0.09803922, b: 0.0627451, a: 1}
+    - _BaseColor: {r: 0.7137255, g: 0.6392157, b: 0.57254905, a: 1}
+    - _Color: {r: 0.7137255, g: 0.6392157, b: 0.57254905, a: 1}
+    - _DiffuseColor: {r: 0.7137255, g: 0.6392157, b: 0.57254905, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0.6968671, g: 0.91194963, b: 0.71735114, a: 1}
+    - _FresnelColor: {r: 0.57232696, g: 0.4778294, b: 0.39414966, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _SpecularColor: {r: 0.36930528, g: 0.509434, b: 0.25792095, a: 1}
+    - _SpecularColor: {r: 0.99607843, g: 0.96862745, b: 0.7372549, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &719093806422784540
 MonoBehaviour:
