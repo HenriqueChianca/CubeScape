@@ -13,11 +13,12 @@ public class BotaoDScript : MonoBehaviour
         switch (buttonName)
         {
             case "PianoBackButton":
-                PianoToDisable.SetActive(false); 
+                PianoToDisable.SetActive(false);
                 break;
             case "SafeBackButton":
                 SafeToDisable.SetActive(false);
                 break;
         }
+        
     }
 }

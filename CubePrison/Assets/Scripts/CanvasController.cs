@@ -86,6 +86,7 @@ public class CanvasController : MonoBehaviour
         int index = item.transform.GetSiblingIndex();
         uiItems[index].selected = !uiItems[index].selected;
         print("pinto");
+        
     }
 
 }
