@@ -120,7 +120,7 @@ Material:
     - _Fresnel_Angle: 1
     - _Fresnel_Size: 1
     - _GlossMapScale: 1
-    - _Gloss_Size: 4
+    - _Gloss_Size: 0
     - _Gloss_Size_1: 20
     - _Glossiness: 1
     - _Glossiness_1: 1

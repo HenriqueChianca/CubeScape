@@ -130,10 +130,10 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _FresneSize: 0.1
-    - _Fresnel_Angle: -0.9
-    - _Fresnel_Size: 1
+    - _Fresnel_Angle: -2.9
+    - _Fresnel_Size: 0.777
     - _GlossMapScale: 1
-    - _Gloss_Size: 20
+    - _Gloss_Size: 12
     - _Gloss_Size_1: 20
     - _Glossiness: 1
     - _Glossiness_1: 1

@@ -8,13 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 12
-  m_Shader: {fileID: -6465566751694194690, guid: 4a2a529ba0824ec43ac2774af301e197, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 68007d6208019d742a49c03f21b968e1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _ALPHAPREMULTIPLY_ON
-  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -50,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 59b9b4a0c818ef54fa0cd3eb0536aad4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -63,6 +61,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_376aea0ad6704f599d5f4c811a9e221e_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: d9d67a031894ad04e9dada8eaded4961, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c73005c62f31454c8ea603fe98ae888c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: d520ccca78c2f9943b98eba9b871db04, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -90,6 +96,7 @@ Material:
     - MAIN_LIGHT_CALCULATE_SHADOWS: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _Amb_Light_Intensity: 0
     - _Blend: 2
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -102,9 +109,13 @@ Material:
     - _DstBlend: 1
     - _DstBlendAlpha: 1
     - _EnvironmentReflections: 1
+    - _Fresnel_Angle: 1
+    - _Fresnel_Size: 0
     - _GlossMapScale: 0
+    - _Gloss_Size: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _MAIN_LIGHT_SHADOWS: 0
     - _MAIN_LIGHT_SHADOWS_CASCADE: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -123,10 +134,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - MainColor: {r: 0.112653725, g: 0.40251565, b: 0.19544677, a: 1}
+    - MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 0.06666667, g: 0.25490198, b: 0.30980393, a: 1}
     - _Color: {r: 0.06666665, g: 0.25490195, b: 0.3098039, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission_Color: {r: 0.31964797, g: 1.1353015, b: 0.5511171, a: 0}
+    - _Fresnel_Intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _Gloss_Intensity: {r: 0.89121705, g: 0.89121705, b: 0.89121705, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1451917152720323180

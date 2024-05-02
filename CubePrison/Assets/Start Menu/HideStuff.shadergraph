@@ -109,7 +109,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "05eee3f675ed422fb3d86cb749e3072a",
     "m_Id": 0,
-    "m_DisplayName": "Float",
+    "m_DisplayName": "Transparency",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -317,9 +317,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -170.66665649414063,
-            "y": 305.9999694824219,
-            "width": 102.66665649414063,
+            "x": -158.0,
+            "y": 297.33331298828127,
+            "width": 102.66668701171875,
             "height": 36.0
         }
     },
@@ -382,10 +382,10 @@
     "m_Guid": {
         "m_GuidSerialized": "afe8cf45-bd0c-47a3-8486-3ad791a2c765"
     },
-    "m_Name": "Float",
+    "m_Name": "Transparency",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Float",
-    "m_DefaultReferenceName": "_Float",
+    "m_RefNameGeneratedByDisplayName": "Transparency",
+    "m_DefaultReferenceName": "_Transparency",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,

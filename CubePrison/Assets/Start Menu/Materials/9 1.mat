@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7657462871582651056
+--- !u!114 &-4124021930699445909
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,18 +20,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2
+  m_Name: 9 1
   m_Shader: {fileID: -6465566751694194690, guid: 16b8a3983e519ba4ca7a1b647fb68da0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _MAIN_LIGHT_SHADOWS
   - _SHADOWS_SOFT
-  m_InvalidKeywords:
-  - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
-  - MAIN_LIGHT_CALCULATE_SHADOWS
-  - _ADDITIONAL_LIGHT_CALCULATE_SHADOWS
-  - _ADDITIONAL_LIGHT_SHADOWS
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -59,10 +55,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DiffuseTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -114,12 +106,10 @@ Material:
     - _ADDITIONAL_LIGHT_SHADOWS: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amb_Light_Intensity: 0.013
-    - _AmbientLightStrenght: 1.19
+    - _Amb_Light_Intensity: 0.113
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
-    - _CellSmoothness: 0.84
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -129,47 +119,42 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FresneSize: 2.68
-    - _Fresnel_Angle: -1.4
+    - _Fresnel_Angle: -2.7
     - _Fresnel_Size: 0
-    - _GlossMapScale: 1
-    - _Gloss_Size: 8
+    - _GlossMapScale: 0
+    - _Gloss_Size: 0
     - _Gloss_Size_1: 20
     - _Glossiness: 0
     - _Glossiness_1: 1
-    - _GlossyReflections: 1
+    - _GlossyReflections: 0
     - _Light_Intensity: 1
-    - _LightingCutoff: 0.24
     - _MAIN_LIGHT_SHADOWS: 1
     - _MAIN_LIGHT_SHADOWS_CASCADE: 0
     - _Metallic: 0
-    - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.02
+    - _Parallax: 0.005
+    - _Power: 0.14
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SHADOWS_SOFT: 1
-    - _Smoothness: 3.57
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _UVSec: 0
+    - _VertexDeform: 0.003
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - MainColor: {r: 0.04908819, g: 0.21383637, b: 0.21383637, a: 1}
-    - _BaseColor: {r: 0.06666667, g: 0.30909145, b: 0.30980393, a: 1}
-    - _Color: {r: 0.06666665, g: 0.30909142, b: 0.3098039, a: 1}
-    - _DiffuseColor: {r: 0.24528301, g: 0.10892282, b: 0.03316715, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0.46540874, g: 0.46540874, b: 0.46540874, a: 0}
-    - _Fresnel_Intensity: {r: 0.72327036, g: 0.72327036, b: 0.72327036, a: 0.1764706}
-    - _Gloss_Intensity: {r: 64, g: 64, b: 64, a: 1}
+    - MainColor: {r: 0.24705882, g: 0.24705882, b: 0.24705882, a: 1}
+    - _BaseColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
+    - _Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Fresnel_Intensity: {r: 11.313708, g: 11.313708, b: 11.313708, a: 0.1764706}
+    - _Gloss_Intensity: {r: 2.6701567, g: 2.6701567, b: 2.6701567, a: 1}
     - _Gloss_Intensity_1: {r: 1, g: 1, b: 1, a: 0}
     - _Light_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _SpecularColor: {r: 0.5345911, g: 0.32790223, b: 0.31100422, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

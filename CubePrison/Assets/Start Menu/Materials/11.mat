@@ -110,10 +110,10 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Fresnel_Angle: -1.1
-    - _Fresnel_Size: 0.728
+    - _Fresnel_Angle: -0.6
+    - _Fresnel_Size: 0.04
     - _GlossMapScale: 0
-    - _Gloss_Size: 6.1
+    - _Gloss_Size: 0
     - _Gloss_Size_1: 20
     - _Glossiness: 1
     - _Glossiness_1: 1
@@ -141,7 +141,7 @@ Material:
     - _BaseColor: {r: 0.49056602, g: 0.3598476, b: 0.16506463, a: 1}
     - _Color: {r: 0.49056596, g: 0.35984758, b: 0.1650646, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Fresnel_Intensity: {r: 7.6578083, g: 7.13294, b: 7.1039414, a: 0.1764706}
+    - _Fresnel_Intensity: {r: 6.4222336, g: 5.982052, b: 5.957732, a: 0.1764706}
     - _Gloss_Intensity: {r: 5.7358494, g: 5.7358494, b: 5.7358494, a: 1}
     - _Gloss_Intensity_1: {r: 1, g: 1, b: 1, a: 0}
     - _Light_Color: {r: 1, g: 1, b: 1, a: 0}

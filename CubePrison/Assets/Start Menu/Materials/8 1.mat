@@ -100,7 +100,7 @@ Material:
     - _ADDITIONAL_LIGHT_SHADOWS: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amb_Light_Intensity: 0.033
+    - _Amb_Light_Intensity: 0
     - _AmbientLightStrenght: 1.51
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -116,10 +116,10 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _FresneSize: 2.24
-    - _Fresnel_Angle: 1
-    - _Fresnel_Size: 0.743
+    - _Fresnel_Angle: -5.4
+    - _Fresnel_Size: 0.098
     - _GlossMapScale: 1
-    - _Gloss_Size: 6
+    - _Gloss_Size: 3
     - _Gloss_Size_1: 20
     - _Glossiness: 1
     - _Glossiness_1: 1
@@ -152,8 +152,8 @@ Material:
     - _DiffuseColor: {r: 0.07402786, g: 0.07402786, b: 0.11949676, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _FresnelColor: {r: 0.10559305, g: 0.11317971, b: 0.11949676, a: 1}
-    - _Fresnel_Intensity: {r: 0.7967204, g: 1, b: 0, a: 0.1764706}
-    - _Gloss_Intensity: {r: 64, g: 64, b: 64, a: 1}
+    - _Fresnel_Intensity: {r: 178.54652, g: 191.74905, b: 117.58195, a: 1}
+    - _Gloss_Intensity: {r: 59.017696, g: 59.017696, b: 59.017696, a: 1}
     - _Gloss_Intensity_1: {r: 1, g: 1, b: 1, a: 0}
     - _Light_Color: {r: 1, g: 1, b: 1, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

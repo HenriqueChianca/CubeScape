@@ -89,7 +89,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amb_Light_Intensity: 0
+    - _Amb_Light_Intensity: 0.012
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
