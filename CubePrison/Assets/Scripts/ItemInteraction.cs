@@ -57,8 +57,8 @@ public class ItemInteraction : MonoBehaviour
                     }
                     break;
                 }
-
-                else if(savedString != Requirement || savedString == null)
+                
+                if(savedString != Requirement || savedString == null)
                 {
                     if (!audioSource.isPlaying)
                     {

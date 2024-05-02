@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BotaoDScript : MonoBehaviour
 {
-    public GameObject PianoToDisable, SafeToDisable;
+    public GameObject PianoToDisable, SafeToDisable, MusicToDisable, LetterToDisable;
 
     public void OnButtonClick()
     {
@@ -17,6 +17,12 @@ public class BotaoDScript : MonoBehaviour
                 break;
             case "SafeBackButton":
                 SafeToDisable.SetActive(false);
+                break;
+            case "MusicBackButton":
+                MusicToDisable.SetActive(false);
+                break;
+            case "LetterBackButton":
+                LetterToDisable.SetActive(false);
                 break;
         }
     }
