@@ -100,12 +100,12 @@ TextureImporter:
       name: EstanteSprites_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1020
-        width: 221
-        height: 955
+        x: 40
+        y: 1025
+        width: 214
+        height: 947
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: EstanteSprites_1
       rect:
         serializedVersion: 2
-        x: 263
-        y: 1022
-        width: 267
-        height: 799
+        x: 266
+        y: 1030
+        width: 264
+        height: 787
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: EstanteSprites_2
       rect:
         serializedVersion: 2
-        x: 580
-        y: 1024
-        width: 278
-        height: 844
+        x: 582
+        y: 1028
+        width: 276
+        height: 834
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: EstanteSprites_3
       rect:
         serializedVersion: 2
-        x: 898
-        y: 1035
-        width: 152
-        height: 988
+        x: 900
+        y: 1040
+        width: 149
+        height: 983
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: EstanteSprites_4
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 1024
-        width: 200
-        height: 834
+        x: 1072
+        y: 1036
+        width: 197
+        height: 822
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 761
         height: 1520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: EstanteSprites_6
       rect:
         serializedVersion: 2
-        x: 26
-        y: 32
-        width: 268
-        height: 724
+        x: 28
+        y: 34
+        width: 264
+        height: 720
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: EstanteSprites_7
       rect:
         serializedVersion: 2
-        x: 332
-        y: 32
-        width: 250
-        height: 926
+        x: 333
+        y: 36
+        width: 247
+        height: 920
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: EstanteSprites_8
       rect:
         serializedVersion: 2
-        x: 615
-        y: 39
-        width: 227
-        height: 822
+        x: 617
+        y: 43
+        width: 222
+        height: 815
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: EstanteSprites_9
       rect:
         serializedVersion: 2
-        x: 886
+        x: 888
         y: 42
-        width: 140
-        height: 942
+        width: 136
+        height: 937
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,12 +310,12 @@ TextureImporter:
       name: EstanteSprites_10
       rect:
         serializedVersion: 2
-        x: 1058
+        x: 1059
         y: 46
-        width: 176
-        height: 762
+        width: 174
+        height: 759
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
         width: 7
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
