@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class BotaoDScript : MonoBehaviour
 {
-    public GameObject PianoToDisable, SafeToDisable, MusicToDisable, LetterToDisable;
+    public GameObject PianoToDisable, SafeToDisable, MusicToDisable, LetterToDisable, DrawerToDisable;
+    public Collider UIOpenButton;
 
     public void OnButtonClick()
     {
@@ -13,7 +14,7 @@ public class BotaoDScript : MonoBehaviour
         switch (buttonName)
         {
             case "PianoBackButton":
-                PianoToDisable.SetActive(false); 
+                PianoToDisable.SetActive(false);
                 break;
             case "SafeBackButton":
                 SafeToDisable.SetActive(false);
@@ -23,6 +24,10 @@ public class BotaoDScript : MonoBehaviour
                 break;
             case "LetterBackButton":
                 LetterToDisable.SetActive(false);
+                break;
+            case "DrawerBackButton":
+                DrawerToDisable.SetActive(false);
+                UIOpenButton.enabled = true;
                 break;
         }
     }

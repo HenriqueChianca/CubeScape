@@ -45,6 +45,7 @@ public class WardrobeController : MonoBehaviour
                         todoFechado.SetActive(false);
                         esquerda.SetActive(true);
                         esquerdaAberto = true;
+                        LeftCollider.enabled = false;
                     }
                 }
 
@@ -57,6 +58,7 @@ public class WardrobeController : MonoBehaviour
                         todoFechado.SetActive(false);
                         direita.SetActive(true);
                         direitaAberto = true;
+                        RightCollider.enabled = false;
                     }
                 }
             }
