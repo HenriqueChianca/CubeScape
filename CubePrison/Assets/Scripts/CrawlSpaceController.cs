@@ -7,16 +7,13 @@ public class CrawlSpaceController : MonoBehaviour
     private static CrawlSpaceController instance;
     private Renderer CrawlSpace; // Declaração da variável de membro
 
-    public AudioSource audioSource;
-    public AudioClip audioClip;
-
     private void Awake()
     {
         // Garantir que apenas uma instância da classe exista
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -43,7 +40,6 @@ public class CrawlSpaceController : MonoBehaviour
             MaterialPropertyBlock mpb = new MaterialPropertyBlock();
             mpb.SetFloat("_isOpen", 1f); // Definindo como 1, que representa verdadeiro
             CrawlSpace.SetPropertyBlock(mpb); // Usando a variável de membro para acessar o Renderer
-            audioSource.PlayOneShot(audioClip);
         }
     }   
 }
