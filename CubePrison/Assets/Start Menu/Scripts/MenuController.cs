@@ -41,20 +41,31 @@ public class MenuController : MonoBehaviour
     {
         Application.OpenURL(link);
     }
+
+    // Função para mudar o efeito de blur
     public void MudarBlur()
     {
         blur = !blur;
     }
+
+    // Função para pausar o jogo
+    public void PausarJogo()
+    {
+        Time.timeScale = 0f;
+    }
+
+    // Função para despausar o jogo
+    public void DespausarJogo()
+    {
+        Time.timeScale = 1f;
+    }
+
     // Função para ativar o efeito Depth of Field se a variável blur for verdadeira
     private void Update()
     {
-        if (blur == true)
+        if (depthOfField != null)
         {
-            depthOfField.active = true;
-        }
-        else
-        {
-            depthOfField.active = false;
+            depthOfField.active = blur;
         }
     }
 }
