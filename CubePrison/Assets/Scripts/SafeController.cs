@@ -8,13 +8,17 @@ public class SafeController : MonoBehaviour
     public Text textObject;
     private int[] code = new int[4]; // Array para armazenar o código
     public string correctCode = "1234"; // Código correto
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     public GameObject ClosedSafe, OpenedSafe;
 
     public void OnButtonClick()
     {
+
         // Obtém o nome do GameObject do botão que foi clicado
         string buttonName = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
+        audioSource.PlayOneShot(audioClip);
 
         // Verifica o nome do botão e atualiza o texto conforme necessário
         switch (buttonName)
