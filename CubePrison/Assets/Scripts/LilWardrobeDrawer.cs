@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class LilWardrobeDrawer : MonoBehaviour
 {
-    public GameObject UIDrawers, Inventory;
-    public Button UpDrawer, MiddleDrawer, BottomDrawer, MostBottomDrawer;
-    public Collider UIOpenButton;
+    public GameObject LilUIDrawers, Inventory;
+    public Button LilUpDrawer, LilMiddleDrawer;
+    public Collider LilUIOpenButton;
+    public Animator LilUpDrawerAnim, LilMiddleDrawerAnim;
+    public Button Screwdriver;
 
     public void OnMouseDown()
     {
@@ -20,7 +22,7 @@ public class LilWardrobeDrawer : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             // Verifica se o objeto colidido tem o nome desejado
-            if (hit.collider != null && hit.collider.gameObject.name == "UIOpenButton")
+            if (hit.collider != null && hit.collider.gameObject.name == "LilUIOpenButton")
             {
                 ActivateUIDrawers();
             }
@@ -32,54 +34,44 @@ public class LilWardrobeDrawer : MonoBehaviour
         string buttonName = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
         switch (buttonName)
         {
-            case "UpDrawerButton":
+            case "LilUpDrawerButton":
             print("UpDrawer foi clicado!");
 
-            /*if(!MiddleDrawer.interactable && !BottomDrawer.interactable)
-                {
-                    MiddleDrawer.interactable = true;
-                    BottomDrawer.interactable = true;
-                    Inventory.SetActive(false);
-                }
-
-            MiddleDrawer.interactable = false;
-            BottomDrawer.interactable = false;
-
-            Inventory.SetActive(false);*/
-
+            if(LilUpDrawerAnim.GetBool("isOpen"))
+            {
+                LilMiddleDrawer.interactable = true;
+                Inventory.SetActive(false);
+                LilUpDrawerAnim.SetBool("isOpen", false);
                 break;
+            }
 
-            case "MiddleDrawerButton":
+            if(!LilUpDrawerAnim.GetBool("isOpen"))
+            {
+                LilMiddleDrawer.interactable = false;
+                LilUpDrawerAnim.SetBool("isOpen", true);
+                break;
+            }
+            break;
+
+
+            case "LilMiddleDrawerButton":
                 print("MiddleDrawer foi clicado!");
 
-                /*UpDrawer.interactable = false;
-                BottomDrawer.interactable = false;
-
-                Inventory.SetActive(false);*/
-
+            if(LilMiddleDrawerAnim.GetBool("isOpen"))
+            {
+                LilUpDrawer.interactable = true;
+                Inventory.SetActive(false);
+                LilMiddleDrawerAnim.SetBool("isOpen", false);
                 break;
+            }
 
-            case "BottomDrawerButton":
-                print("BottomDrawer foi clicado!");
-
-                /*if(!UpDrawer.interactable && !MiddleDrawer.interactable)
-                {
-                    UpDrawer.interactable = true;
-                    MiddleDrawer.interactable = true;
-                    Inventory.SetActive(false);
-                }
-
-                MiddleDrawer.interactable = false;
-                BottomDrawer.interactable = false;
-
-                Inventory.SetActive(false);*/
-
+            if(!LilMiddleDrawerAnim.GetBool("isOpen"))
+            {
+                LilUpDrawer.interactable = false;
+                LilMiddleDrawerAnim.SetBool("isOpen", true);
                 break;
-
-            case "MostBottomDrawerButton":
-                print("MostBottomDrawerButton foi clicado!");
-
-                break;
+            }
+            break;
 
             default:
                 print("Outro collider foi clicado!");
@@ -91,10 +83,10 @@ public class LilWardrobeDrawer : MonoBehaviour
     {
         Inventory.SetActive(false);
 
-        if(!UIDrawers.activeSelf)
+        if(!LilUIDrawers.activeSelf)
         {
-            UIDrawers.SetActive(true);
-            UIOpenButton.enabled = false;
+            LilUIDrawers.SetActive(true);
+            LilUIOpenButton.enabled = false;
         }
     }
 }
