@@ -100,7 +100,7 @@ Material:
     - _ADDITIONAL_LIGHT_SHADOWS: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amb_Light_Intensity: 0
+    - _Amb_Light_Intensity: 0.27
     - _AmbientLightStrenght: 1.51
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
