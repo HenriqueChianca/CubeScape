@@ -123,7 +123,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Fresnel_Angle: -0.6
+    - _Fresnel_Angle: 1
     - _Fresnel_Size: 0
     - _GlossMapScale: 0
     - _Gloss_Size: 14
