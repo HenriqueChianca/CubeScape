@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer mixer;
     Resolution[] resolutiuons;
     public Dropdown resDropdown;
 
@@ -39,9 +40,17 @@ public class SettingsMenu : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void SetVolume(float volume)
+    public void SetMainVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        mixer.SetFloat("main", volume);
+    }
+    public void SetMusicVolume(float volume)
+    {
+        mixer.SetFloat("music", volume);
+    }
+    public void SetSfxVolume(float volume)
+    {
+        mixer.SetFloat("sfx", volume);
     }
 
     public void SetFullscreen(bool isFullscreen)

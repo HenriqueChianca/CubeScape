@@ -7,7 +7,7 @@ public class BooksPuzzle : MonoBehaviour
     // Arrays que armazenam os game objects, seus índices e suas transformadas
     public GameObject[] gameObjects = new GameObject[10];
     public int[] ints = new int[10];
-    public Transform[] transforms = new Transform[10];
+    public List<Transform> transforms = new List<Transform>(10);
 
     // Índices dos últimos botões clicados
     private int lastClickedButtonIndex = -1, lastClickedButtonIndex2 = -1;
@@ -55,9 +55,9 @@ public class BooksPuzzle : MonoBehaviour
     public void OnButtonClick()
     {
         // Obtém o nome do botão clicado
-        string buttonName = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
+        //string buttonName = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
         // Obtém o índice do botão clicado
-        int buttonIndex = GetButtonIndex(buttonName);
+        int buttonIndex = transforms.IndexOf(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform); //GetButtonIndex(buttonName);
 
         // Verifica se o botão clicado é válido e se não é o mesmo que os últimos dois clicados
         if (buttonIndex != -1 && buttonIndex != lastClickedButtonIndex && buttonIndex != lastClickedButtonIndex2)
@@ -89,7 +89,7 @@ public class BooksPuzzle : MonoBehaviour
                     transforms[buttonIndex] = tempTransform;
                 }
                 // Reinicia os índices dos últimos dois botões clicados
-                lastClickedButtonIndex2 = -2;
+                lastClickedButtonIndex2 = -1;
                 lastClickedButtonIndex = -1;
 
                 // Atualiza a string BooksOrder com base na ordem dos game objects
@@ -98,7 +98,7 @@ public class BooksPuzzle : MonoBehaviour
         }
     }
 
-    private int GetButtonIndex(string buttonName)
+   private int GetButtonIndex(string buttonName)
     {
         // Obtém o índice do botão com base no seu nome
         switch (buttonName)

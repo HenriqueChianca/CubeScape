@@ -11,6 +11,9 @@
         },
         {
             "m_Id": "fed49192f5df49a4a80eaafa37ecc13b"
+        },
+        {
+            "m_Id": "baf5f3f575f74798b4cb9eef12c69a3c"
         }
     ],
     "m_Keywords": [],
@@ -89,6 +92,9 @@
         },
         {
             "m_Id": "be587cf9f8ea40358c04d922d1083b4b"
+        },
+        {
+            "m_Id": "8d3c15f25eac40a09438b8431a09e4a4"
         }
     ],
     "m_GroupDatas": [],
@@ -230,6 +236,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "db72ebda6fa940ccb47834a35e9a7046"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "8d3c15f25eac40a09438b8431a09e4a4"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "8b83546f9c45475eaa44c8beff73d31c"
                 },
                 "m_SlotId": 1
             }
@@ -817,6 +837,19 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
+    "m_ObjectId": "41aef6690a7e46bda255c30f903ac1a8",
+    "m_Id": 0,
+    "m_DisplayName": "Texture",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_BareResource": false
 }
 
 {
@@ -1472,13 +1505,13 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -766.6665649414063,
-            "y": 353.3333435058594,
-            "width": 156.0,
-            "height": 158.6666259765625
+            "x": -788.0000610351563,
+            "y": 357.3333435058594,
+            "width": 184.666748046875,
+            "height": 254.66671752929688
         }
     },
     "m_Slots": [
@@ -1521,6 +1554,42 @@
     "m_NormalMapSpace": 0,
     "m_EnableGlobalMipBias": true,
     "m_MipSamplingMode": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "8d3c15f25eac40a09438b8431a09e4a4",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -956.6665649414063,
+            "y": 374.6667175292969,
+            "width": 138.66656494140626,
+            "height": 35.999969482421878
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "41aef6690a7e46bda255c30f903ac1a8"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "baf5f3f575f74798b4cb9eef12c69a3c"
+    }
 }
 
 {
@@ -1832,6 +1901,36 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "baf5f3f575f74798b4cb9eef12c69a3c",
+    "m_Guid": {
+        "m_GuidSerialized": "e4b4a6b9-394d-4fcc-a3c2-7447e8c9270e"
+    },
+    "m_Name": "Texture",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Texture",
+    "m_DefaultReferenceName": "_Texture",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"3679aa06169109048ade02b2330bbd20\",\"type\":3}}",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "be587cf9f8ea40358c04d922d1083b4b",
     "m_Group": {
@@ -1880,6 +1979,9 @@
         },
         {
             "m_Id": "fed49192f5df49a4a80eaafa37ecc13b"
+        },
+        {
+            "m_Id": "baf5f3f575f74798b4cb9eef12c69a3c"
         }
     ]
 }
