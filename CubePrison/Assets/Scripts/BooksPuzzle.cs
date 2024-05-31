@@ -114,7 +114,7 @@ public class BooksPuzzle : MonoBehaviour
             case "AngustiaButton":
                 return 4;
             case "PerdaoButton":
-                return 5;
+                return 0;
             case "EscuridaoButton":
                 return 6;
             case "SolidaoButton":
@@ -122,7 +122,7 @@ public class BooksPuzzle : MonoBehaviour
             case "LamentacoesButton":
                 return 8;
             case "AbismoButton":
-                return 9;
+                return 4;
             default:
                 return -1;
         }
