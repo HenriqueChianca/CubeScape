@@ -20,11 +20,20 @@ public class WardrobeController : MonoBehaviour
         if (direitaAberto && esquerdaAberto && OverallPuzzle == null)
         {
             todoAberto.SetActive(true);
-            InBetweenOpen.SetActive(false);
+            if(InBetweenOpen != null)
+            {
+                InBetweenOpen.SetActive(false);
+            }
+            esquerda.SetActive(false);
+            direita.SetActive(false);
+
         }
         if(direitaAberto && esquerdaAberto && OverallPuzzle != null && InBetweenOpen != null)
         {
-            InBetweenOpen.SetActive(true);
+            if(InBetweenOpen != null)
+            {
+                InBetweenOpen.SetActive(false);
+            }
         }
         if (Input.GetMouseButtonDown(0))
         {
