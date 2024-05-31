@@ -34,8 +34,6 @@ public class ItemInteraction : MonoBehaviour
                         {
                             // Realize a interação apenas se o item estiver selecionado
                             print("Item necessário encontrado e selecionado.");
-                            
-                            // Proceda com a interação aqui...
 
                             // Remova o item do inventário após a interação
                             int indexToRemove = ItemSaver.GetInstance().stringList.IndexOf(Requirement);

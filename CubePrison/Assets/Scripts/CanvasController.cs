@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class CanvasController : MonoBehaviour
     public UIItem[] uiItems;
 
     public int[] InventorySlot = new int[6];
+
+    public string targetSceneName = "Menu";
 
     private void Awake()
     {
@@ -37,6 +40,24 @@ public class CanvasController : MonoBehaviour
     public static CanvasController GetInstance()
     {
         return instance;
+    }
+
+    void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Cancela a subscrição quando o objeto é destruído
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == targetSceneName)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Update()

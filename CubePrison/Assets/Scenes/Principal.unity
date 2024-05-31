@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1009,16 +1009,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119022011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3454255, y: 0.8089961, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00010110221}
+  m_LocalScale: {x: 1.5303, y: 1.5303, z: 1.5303}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787491598}
+  m_Father: {fileID: 374723665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.5, y: 0.000061035156}
+  m_AnchoredPosition: {x: -331, y: -9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119022013
@@ -3303,7 +3303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &374723665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3316,6 +3316,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2022326179}
+  - {fileID: 1270852802}
+  - {fileID: 119022012}
   - {fileID: 2094116737}
   m_Father: {fileID: 597369025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3338,7 +3341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10136,15 +10139,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270852801}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3454255, y: 0.8089961, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00010110221}
+  m_LocalScale: {x: 1.5303, y: 1.5303, z: 1.5303}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787491598}
+  m_Father: {fileID: 374723665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: 0.000061035156}
+  m_AnchoredPosition: {x: -549, y: -6.200012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270852803
@@ -11623,7 +11626,7 @@ GameObject:
   - component: {fileID: 1396148136}
   - component: {fileID: 1396148138}
   m_Layer: 0
-  m_Name: Musica e SFX Menu oause
+  m_Name: Musica e SFX Menu pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13296,6 +13299,7 @@ GameObject:
   - component: {fileID: 1581381647}
   - component: {fileID: 1581381648}
   - component: {fileID: 1581381649}
+  - component: {fileID: 1581381650}
   m_Layer: 0
   m_Name: DEUS
   m_TagString: Untagged
@@ -13459,7 +13463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SelectedInInventory: 0
   j: 0
-  mainObject: {fileID: 1787491597}
+  mainObject: {fileID: 374723664}
   mainObjectVisible: 0
   SavingInInventory: 0
   SavedSlot: 0
@@ -13477,6 +13481,7 @@ MonoBehaviour:
     slot: 2
     selected: 0
   InventorySlot: 000000000100000002000000030000000400000005000000
+  targetSceneName: Menu
 --- !u!114 &1581381648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13513,6 +13518,20 @@ MonoBehaviour:
   UIOpenButton: {fileID: 40692115}
   LilUIOpenButton: {fileID: 890402042}
   LilDrobeButton: {fileID: 871184654}
+--- !u!114 &1581381650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581381641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39878b5d0266d9d4b82867eabae0a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 374723668}
+  clicked: 0
 --- !u!1 &1598117345
 GameObject:
   m_ObjectHideFlags: 0
@@ -14893,7 +14912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1787491598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14905,10 +14924,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.8949802, y: 1.2361, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2022326179}
-  - {fileID: 1270852802}
-  - {fileID: 119022012}
+  m_Children: []
   m_Father: {fileID: 597369025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -17029,14 +17045,14 @@ RectTransform:
   m_GameObject: {fileID: 2022326178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3454255, y: 0.8089961, z: 1}
+  m_LocalScale: {x: 1.5303, y: 1.5303, z: 1.5303}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787491598}
+  m_Father: {fileID: 374723665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.4, y: 0.000061035156}
+  m_AnchoredPosition: {x: -770, y: -8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2022326180
@@ -17790,17 +17806,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 374723668}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
+      - m_Target: {fileID: 1581381650}
+        m_TargetAssemblyTypeName: InventoryAnimator, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GoingDown
-          m_BoolArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &2094116740
 CanvasRenderer:
