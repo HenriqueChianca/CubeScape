@@ -7,14 +7,10 @@ public class CriadoController : MonoBehaviour
     public GameObject direita, direitaMetal, esquerda, todoAberto, abertoMetal, puzzleEsquerda, puzzleDireita, todoFechado;
     public bool direitaAberto = false, esquerdaAberto = false;
     public AudioSource audioSource;
-    public AudioClip audioClip;
+    public AudioClip BadAudioClip, GoodAudioClip;
     public BoxCollider LeftCollider, RightCollider;
     public bool BooksPuzzleComplete = false;
 
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -50,10 +46,11 @@ public class CriadoController : MonoBehaviour
                         esquerda.SetActive(true);
                         esquerdaAberto = true;
                         LeftCollider.enabled = false;
+                        audioSource.PlayOneShot(GoodAudioClip);
                     }
                     else
                     {
-                        //tocar som aqui tb
+                        audioSource.PlayOneShot(BadAudioClip);
                         print("falta a chave prateada");
                     }
                     
@@ -70,10 +67,11 @@ public class CriadoController : MonoBehaviour
                         direitaMetal.SetActive(true);
                         direitaAberto = true;
                         RightCollider.enabled = false;
+                        audioSource.PlayOneShot(GoodAudioClip);
                     }
                     else
                     {
-                        //botar som aqui depois...
+                        audioSource.PlayOneShot(BadAudioClip);
                         print("falta o puzzle dos livros ser completo");
                     }
                     
@@ -90,6 +88,5 @@ public class CriadoController : MonoBehaviour
     public void PuzzleLivroCompleto()
     {
         BooksPuzzleComplete = true;
-        //tocar um audio aq tb da porta destrancando
     }
 }

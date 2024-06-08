@@ -10,6 +10,9 @@ public class BooksPuzzle : MonoBehaviour
     public int[] ints = new int[10];
     public List<Transform> transforms = new List<Transform>(10);
 
+    public AudioSource audioSource;
+    public AudioClip LivroMexendo, GoodAudioClip;
+
     // Índices dos últimos botões clicados
     private int lastClickedButtonIndex = -1, lastClickedButtonIndex2 = -1;
 
@@ -88,6 +91,8 @@ public class BooksPuzzle : MonoBehaviour
                     Transform tempTransform = transforms[lastClickedButtonIndex];
                     transforms[lastClickedButtonIndex] = transforms[buttonIndex];
                     transforms[buttonIndex] = tempTransform;
+
+                    audioSource.PlayOneShot(LivroMexendo);
                 }
                 // Reinicia os índices dos últimos dois botões clicados
                 lastClickedButtonIndex2 = -1;
@@ -149,6 +154,7 @@ public class BooksPuzzle : MonoBehaviour
     private void PuzzleSolved()
     {
         Debug.Log("puzzle dos livros resolvido");
+        audioSource.PlayOneShot(GoodAudioClip);
         CriadoController.PuzzleLivroCompleto();
     }
 }

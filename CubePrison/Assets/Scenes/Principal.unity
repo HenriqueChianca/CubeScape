@@ -453,6 +453,9 @@ MonoBehaviour:
   - {fileID: 2139457200}
   - {fileID: 1006737274}
   - {fileID: 962238748}
+  audioSource: {fileID: 1581381645}
+  LivroMexendo: {fileID: 8300000, guid: 5f1dc79de055d9442ab299b5c85060e9, type: 3}
+  GoodAudioClip: {fileID: 8300000, guid: 84f2729c9616e6842885a13634fd3adf, type: 3}
   Requirement: 0123406484
   BooksOrder: 
   PuzzleRequirement: 4031482046
@@ -3907,7 +3910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &434061552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7176,7 +7179,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919867323}
-  - component: {fileID: 919867324}
   - component: {fileID: 919867325}
   m_Layer: 0
   m_Name: Estante
@@ -7212,30 +7214,6 @@ Transform:
   - {fileID: 871184653}
   m_Father: {fileID: 2131305315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &919867324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919867322}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f438064f955f54ebb1d578b9fb326a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direita: {fileID: 768780915}
-  esquerda: {fileID: 1499454307}
-  todoAberto: {fileID: 490728951}
-  puzzleDireita: {fileID: 0}
-  puzzleEsquerda: {fileID: 1702288490}
-  todoFechado: {fileID: 1459480254}
-  direitaAberto: 0
-  esquerdaAberto: 0
-  audioSource: {fileID: 1581381645}
-  audioClip: {fileID: 8300000, guid: a003c1ebd83d6ce43b4ada5a936b4e12, type: 3}
-  LeftCollider: {fileID: 1526889168}
-  RightCollider: {fileID: 1934130113}
 --- !u!114 &919867325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7259,7 +7237,8 @@ MonoBehaviour:
   direitaAberto: 0
   esquerdaAberto: 0
   audioSource: {fileID: 1581381645}
-  audioClip: {fileID: 0}
+  BadAudioClip: {fileID: 8300000, guid: 17395db03e18df242b98189f48d3720b, type: 3}
+  GoodAudioClip: {fileID: 8300000, guid: 84f2729c9616e6842885a13634fd3adf, type: 3}
   LeftCollider: {fileID: 1526889168}
   RightCollider: {fileID: 1934130113}
   BooksPuzzleComplete: 0
@@ -10213,6 +10192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1259777297}
   - component: {fileID: 1259777298}
+  - component: {fileID: 1259777299}
   m_Layer: 5
   m_Name: NumbersZoom
   m_TagString: Untagged
@@ -10249,6 +10229,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259777296}
   m_CullTransparentMesh: 1
+--- !u!114 &1259777299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259777296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df02bc8ef052b324f99b9ec3a53f5633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Notes: {fileID: 0}
+  audioSource: {fileID: 1581381645}
+  AudioClip: {fileID: 8300000, guid: 6c5d2899ba98edf498a5d7f9c1549150, type: 3}
 --- !u!1 &1270852801
 GameObject:
   m_ObjectHideFlags: 0
@@ -15721,6 +15716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1847655898}
   - component: {fileID: 1847655899}
+  - component: {fileID: 1847655900}
   m_Layer: 5
   m_Name: MusicZoom
   m_TagString: Untagged
@@ -15757,6 +15753,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847655897}
   m_CullTransparentMesh: 1
+--- !u!114 &1847655900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847655897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df02bc8ef052b324f99b9ec3a53f5633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Notes: {fileID: 434061551}
+  audioSource: {fileID: 0}
+  AudioClip: {fileID: 0}
 --- !u!1 &1856096814
 GameObject:
   m_ObjectHideFlags: 0
@@ -16642,6 +16653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980116603}
   - component: {fileID: 1980116604}
+  - component: {fileID: 1980116605}
   m_Layer: 5
   m_Name: LetterZoom
   m_TagString: Untagged
@@ -16678,6 +16690,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980116602}
   m_CullTransparentMesh: 1
+--- !u!114 &1980116605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980116602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df02bc8ef052b324f99b9ec3a53f5633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Notes: {fileID: 0}
+  audioSource: {fileID: 1581381645}
+  AudioClip: {fileID: 8300000, guid: 1a8e91bf911bf2842b9c5d61d88b86c3, type: 3}
 --- !u!1 &1980525156
 GameObject:
   m_ObjectHideFlags: 0
@@ -26464,6 +26491,8 @@ MonoBehaviour:
   correctCode: 1337
   audioSource: {fileID: 1581381645}
   audioClip: {fileID: 8300000, guid: 0d664e4b2b57959488091b363542f813, type: 3}
+  BadAudioClip: {fileID: 8300000, guid: 578d7d53f3ea56540bd8dc914a503746, type: 3}
+  GoodAudioClip: {fileID: 8300000, guid: 8fae10ad15670584cbcf9458709f46b6, type: 3}
   ClosedSafe: {fileID: 4276316152107189545}
   OpenedSafe: {fileID: 336753930}
   Keys: {fileID: 2935679315200758156}
