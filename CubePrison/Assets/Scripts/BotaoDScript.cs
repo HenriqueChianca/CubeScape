@@ -46,6 +46,8 @@ public class BotaoDScript : MonoBehaviour
             case "LetterBackButton":
                 LetterToDisable.SetActive(false);
                 LetterButton.interactable = true;
+                SafeCollider.enabled = true;
+                DrawerCollider.enabled = true;
                 break;
             default:
                 print("por incrivel q pareça vc conseguiu apertar em um bglh q n existe");

@@ -16,11 +16,6 @@ public class ItemScript : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
-
     public void OnMouseDown()
     {
         // Verifique se o botão pressionado é o botão esquerdo (botão 0)

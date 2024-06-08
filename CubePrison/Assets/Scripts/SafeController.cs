@@ -9,7 +9,7 @@ public class SafeController : MonoBehaviour
     private int[] code = new int[4]; // Array para armazenar o código
     public string correctCode = "1234"; // Código correto
     public AudioSource audioSource;
-    public AudioClip audioClip;
+    public AudioClip audioClip, BadAudioClip;
 
     public GameObject ClosedSafe, OpenedSafe, Keys;
 
@@ -123,7 +123,8 @@ public class SafeController : MonoBehaviour
         {
             code[i] = 0;
         }
-
+        
+        audioSource.PlayOneShot(BadAudioClip);
         // Atualiza o texto para mostrar os caracteres vazios
         UpdateText();
     }

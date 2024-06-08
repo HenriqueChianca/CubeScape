@@ -45,7 +45,7 @@ public class WardrobeController : MonoBehaviour
                     }
                     else 
                     {
-                        //tocar um som aqui
+                        audioSource.PlayOneShot(audioClip);
                     }
                 }
 
