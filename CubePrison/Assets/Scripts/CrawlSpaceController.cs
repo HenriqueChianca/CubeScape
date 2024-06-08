@@ -9,6 +9,7 @@ public class CrawlSpaceController : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip audioClip;
+    public bool Opened = false;
 
     private void Awake()
     {
@@ -16,7 +17,6 @@ public class CrawlSpaceController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -44,6 +44,20 @@ public class CrawlSpaceController : MonoBehaviour
             mpb.SetFloat("_isOpen", 1f); // Definindo como 1, que representa verdadeiro
             CrawlSpace.SetPropertyBlock(mpb); // Usando a variável de membro para acessar o Renderer
             audioSource.PlayOneShot(audioClip);
+            Opened = true;
+        }
+    }
+
+    public void OnMouseDown()
+    {
+        if(Opened)
+        {
+            print("vc zerou o jogo tlg");
+            //fazer a lógica de endgame aqui...
+        }
+        else
+        {
+            print("ainda não zerou o game");
         }
     }   
 }

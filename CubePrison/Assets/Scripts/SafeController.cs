@@ -11,8 +11,15 @@ public class SafeController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip audioClip;
 
-    public GameObject ClosedSafe, OpenedSafe;
+    public GameObject ClosedSafe, OpenedSafe, Keys;
 
+
+    public void OnEnable()
+    {
+        ClosedSafe.SetActive(true);
+        OpenedSafe.SetActive(false);
+        Keys.SetActive(true);
+    }
     public void OnButtonClick()
     {
 
@@ -99,13 +106,11 @@ public class SafeController : MonoBehaviour
         {
             Debug.Log("Código correto!");
             ClosedSafe.SetActive(false);
+            Keys.SetActive(false);
             OpenedSafe.SetActive(true);
-            // Execute a função de sucesso aqui
-            // Por exemplo: SuccessFunction();
         }
         else
         {
-            // Limpa o texto se o código digitado for diferente do código correto
             ClearText();
         }
     }
@@ -121,11 +126,5 @@ public class SafeController : MonoBehaviour
 
         // Atualiza o texto para mostrar os caracteres vazios
         UpdateText();
-    }
-
-    // Função de sucesso (substitua isso com a função real que você deseja chamar)
-    private void SuccessFunction()
-    {
-        Debug.Log("Função de sucesso executada!");
     }
 }

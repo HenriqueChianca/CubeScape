@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class BooksPuzzleUIManager : MonoBehaviour
 {
-    public GameObject LilUIDrawers, PianoUI;
-    public Collider LilUIOpenButton, PianoCollider, LilDrawerCollider;
+    public GameObject LilUIDrawers, PianoUI, SafeUI;
+    public Collider LilUIOpenButton, PianoCollider, LilDrawerCollider, SafeCollider, DrawersCollider;
     
     public void OnMouseDown()
     {
@@ -27,6 +27,11 @@ public class BooksPuzzleUIManager : MonoBehaviour
             {
                 print("Piano collider clicked");
                 ActivateUIPiano();
+            }
+            if (hit.collider != null && hit.collider.gameObject.name == "SafeCollider")
+            {
+                print("Safe collider clicked");
+                ActivateUISafe();
             }
         }
     }
@@ -52,6 +57,20 @@ public class BooksPuzzleUIManager : MonoBehaviour
                 PianoUI.SetActive(true);
                 PianoCollider.enabled = false;
                 LilDrawerCollider.enabled = false;
+            }
+        }
+        
+    }
+
+    public void ActivateUISafe()
+    {
+        if(SafeUI != null)
+        {
+            if(!SafeUI.activeSelf)
+            {
+                SafeUI.SetActive(true);
+                SafeCollider.enabled = false;
+                DrawersCollider.enabled = false;
             }
         }
         

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WardrobeController : MonoBehaviour
 {
-    public GameObject direita, esquerda, todoAberto, puzzleDireita, puzzleEsquerda, todoFechado, OverallPuzzle, InBetweenOpen;
+    public GameObject direita, esquerda, todoAberto, puzzleDireita, puzzleEsquerda, todoFechado;
     public bool direitaAberto = false, esquerdaAberto = false;
     public AudioSource audioSource;
     public AudioClip audioClip;
@@ -17,24 +17,11 @@ public class WardrobeController : MonoBehaviour
 
     void Update()
     {
-        if (direitaAberto && esquerdaAberto && OverallPuzzle == null)
+        if (direitaAberto && esquerdaAberto)
         {
             todoAberto.SetActive(true);
-            if(InBetweenOpen != null)
-            {
-                InBetweenOpen.SetActive(false);
-            }
-            esquerda.SetActive(false);
-            direita.SetActive(false);
-
         }
-        if(direitaAberto && esquerdaAberto && OverallPuzzle != null && InBetweenOpen != null)
-        {
-            if(InBetweenOpen != null)
-            {
-                InBetweenOpen.SetActive(false);
-            }
-        }
+        
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
@@ -56,19 +43,21 @@ public class WardrobeController : MonoBehaviour
                         esquerdaAberto = true;
                         LeftCollider.enabled = false;
                     }
+                    else 
+                    {
+                        //tocar um som aqui
+                    }
                 }
 
                 // Verificando se o Collider clicado � igual ao RightCollider
                 if (colliderClicado == RightCollider)
                 {
                     print("Direita Clicada");
-                    if (puzzleDireita == null)
-                    {
-                        todoFechado.SetActive(false);
-                        direita.SetActive(true);
-                        direitaAberto = true;
-                        RightCollider.enabled = false;
-                    }
+                    
+                    todoFechado.SetActive(false);
+                    direita.SetActive(true);
+                    direitaAberto = true;
+                    RightCollider.enabled = false;
                 }
             }
         }

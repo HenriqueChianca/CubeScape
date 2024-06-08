@@ -4,29 +4,36 @@ using UnityEngine;
 
 public class CriadoController : MonoBehaviour
 {
-    public GameObject DireitaAberta, EsquerdaAberta, todoAberto, puzzleDireita, puzzleEsquerda, todoFechado, EsquerdaAbertaDireitaFechada, EsquerdaAbertaDireitaMetalFechado;
-    public bool direitaAberto = false, esquerdaAberto = false, LivrosCompleto = false;
+    public GameObject direita, direitaMetal, esquerda, todoAberto, abertoMetal, puzzleEsquerda, puzzleDireita, todoFechado;
+    public bool direitaAberto = false, esquerdaAberto = false;
     public AudioSource audioSource;
-    public AudioClip PortaDireitaTrancadaSom, PortaEsquerdaTrancadaSom, PortaEsquerdaAbriu;
-    public BoxCollider LeftCollider, RightCollider, RightMetalCollider;
+    public AudioClip audioClip;
+    public BoxCollider LeftCollider, RightCollider;
+    public bool BooksPuzzleComplete = false;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            // Se não existir, adiciona um novo componente AudioSource
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
+
     }
 
     void Update()
     {
+        if (direitaAberto && esquerdaAberto && BooksPuzzleComplete && puzzleDireita != null)
+        {
+            abertoMetal.SetActive(true);
+        }
 
+        if (direitaAberto && esquerdaAberto && BooksPuzzleComplete && puzzleDireita == null)
+        {
+            abertoMetal.SetActive(false);
+            todoAberto.SetActive(true);
+        }
+        
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //audioSource.PlayOneShot(audioClip);
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -36,59 +43,53 @@ public class CriadoController : MonoBehaviour
                 if (colliderClicado == LeftCollider)
                 {
                     print("Esquerda Clicada");
-                    if(puzzleEsquerda)
-                    {
-                        audioSource.PlayOneShot(PortaEsquerdaTrancadaSom);
-                    }
-                    if (puzzleEsquerda == null && !DireitaAberta.activeSelf)
+
+                    if(puzzleEsquerda == null)
                     {
                         todoFechado.SetActive(false);
-                        EsquerdaAberta.SetActive(true);
+                        esquerda.SetActive(true);
                         esquerdaAberto = true;
                         LeftCollider.enabled = false;
                     }
-                    if(puzzleEsquerda == null && DireitaAberta.activeSelf)
+                    else
                     {
-                        todoFechado.SetActive(false);
-
+                        //tocar som aqui tb
+                        print("falta a chave prateada");
                     }
+                    
                 }
 
                 // Verificando se o Collider clicado � igual ao RightCollider
                 if (colliderClicado == RightCollider)
                 {
                     print("Direita Clicada");
-                    if(!LivrosCompleto)
-                    {
-                        audioSource.PlayOneShot(PortaDireitaTrancadaSom);
-                    }
-                    if(LivrosCompleto && !esquerdaAberto)
+                    
+                    if (BooksPuzzleComplete)
                     {
                         todoFechado.SetActive(false);
-                        EsquerdaAbertaDireitaMetalFechado.SetActive(true);
-                        RightCollider.enabled = false;
-                    }
-                    if(LivrosCompleto && esquerdaAberto)
-                    {
-                        EsquerdaAberta.SetActive(false);
-                        EsquerdaAbertaDireitaMetalFechado.SetActive(true);
-                        RightCollider.enabled = false;
-                    }
-                    if (puzzleDireita == null && esquerdaAberto)
-                    {
-                        EsquerdaAbertaDireitaFechada.SetActive(false);
-                        DireitaAberta.SetActive(true);
+                        direitaMetal.SetActive(true);
                         direitaAberto = true;
                         RightCollider.enabled = false;
                     }
+                    else
+                    {
+                        //botar som aqui depois...
+                        print("falta o puzzle dos livros ser completo");
+                    }
+                    
                 }
             }
+        }
+        if(puzzleDireita == null)
+        {
+            direitaMetal.SetActive(false);
+            direita.SetActive(true);
         }
     }
 
     public void PuzzleLivroCompleto()
     {
-        audioSource.PlayOneShot(PortaEsquerdaAbriu);
-        LivrosCompleto = true;
+        BooksPuzzleComplete = true;
+        //tocar um audio aq tb da porta destrancando
     }
 }

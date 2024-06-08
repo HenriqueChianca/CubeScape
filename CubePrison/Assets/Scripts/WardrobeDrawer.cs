@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class WardrobeDrawer : MonoBehaviour
 {
-    public GameObject LeftOpenWardrobe, OpenWardrobe, UIDrawers, Inventory;
+    public GameObject LeftOpenWardrobe, OpenWardrobe, UIDrawers;
     public Button UpDrawer, MiddleDrawer, BottomDrawer;
     public Collider UIOpenButton;
     public Animator UpDrawerAnim, MiddleDrawerAnim, BottomDrawerAnim;
@@ -44,7 +44,7 @@ public class WardrobeDrawer : MonoBehaviour
             {
                 MiddleDrawer.interactable = true;
                 BottomDrawer.interactable = true;
-                Inventory.SetActive(false);
+                
                 UpDrawerAnim.SetBool("isOpen1", false);
                 break;
             }
@@ -66,7 +66,7 @@ public class WardrobeDrawer : MonoBehaviour
             {
                 UpDrawer.interactable = true;
                 BottomDrawer.interactable = true;
-                Inventory.SetActive(false);
+                
                 MiddleDrawerAnim.SetBool("isOpen2", false);
                 Screwdriver.interactable = false;
                 break;
@@ -90,7 +90,7 @@ public class WardrobeDrawer : MonoBehaviour
             {
                 MiddleDrawer.interactable = true;
                 UpDrawer.interactable = true;
-                Inventory.SetActive(false);
+                
                 BottomDrawerAnim.SetBool("isOpen3", false);
                 break;
             }
@@ -113,7 +113,7 @@ public class WardrobeDrawer : MonoBehaviour
 
     public void ActivateUIDrawers()
     {
-        Inventory.SetActive(false);
+        
 
         if(!UIDrawers.activeSelf)
         {

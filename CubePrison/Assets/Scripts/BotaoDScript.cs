@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class BotaoDScript : MonoBehaviour
 {
-    public GameObject PianoToDisable, SafeToDisable, MusicToDisable, LetterToDisable, DrawerToDisable, LilDrawerToDisable, BooksToDisable;
-    public Collider UIOpenButton, LilUIOpenButton, LilDrobeButton, PianoCollider;
+    public GameObject PianoToDisable, SafeToDisable, MusicToDisable, NumbersToDisable, DrawerToDisable, LilDrawerToDisable, BooksToDisable, LetterToDisable;
+    public Collider UIOpenButton, LilUIOpenButton, LilDrobeButton, PianoCollider, SafeCollider, DrawerCollider;
+    public Button LetterButton;
+    //aaaaaaaaaa
 
     public void OnButtonClick()
     {
@@ -19,12 +21,14 @@ public class BotaoDScript : MonoBehaviour
                 break;
             case "SafeBackButton":
                 SafeToDisable.SetActive(false);
+                SafeCollider.enabled = true;
+                DrawerCollider.enabled = true;
                 break;
             case "MusicBackButton":
                 MusicToDisable.SetActive(false);
                 break;
-            case "LetterBackButton":
-                LetterToDisable.SetActive(false);
+            case "NumbersBackButton":
+                NumbersToDisable.SetActive(false);
                 break;
             case "DrawerBackButton":
                 DrawerToDisable.SetActive(false);
@@ -38,6 +42,13 @@ public class BotaoDScript : MonoBehaviour
             case "LilDrobeBackButton":
                 BooksToDisable.SetActive(false);
                 LilDrobeButton.enabled = true;
+                break;
+            case "LetterBackButton":
+                LetterToDisable.SetActive(false);
+                LetterButton.interactable = true;
+                break;
+            default:
+                print("por incrivel q pareça vc conseguiu apertar em um bglh q n existe");
                 break;
         }
     }
