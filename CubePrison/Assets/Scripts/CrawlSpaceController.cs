@@ -6,10 +6,13 @@ public class CrawlSpaceController : MonoBehaviour
 {
     private static CrawlSpaceController instance;
     private Renderer CrawlSpace; // Declaração da variável de membro
+    public GameObject EndGameScreen, BotaoDePause;
 
     public AudioSource audioSource;
     public AudioClip audioClip;
     public bool Opened = false;
+
+    public MenuController MenuController;
 
     private void Awake()
     {
@@ -53,7 +56,9 @@ public class CrawlSpaceController : MonoBehaviour
         if(Opened)
         {
             print("vc zerou o jogo tlg");
-            //fazer a lógica de endgame aqui...
+            MenuController.MudarBlur();
+            BotaoDePause.SetActive(false);
+            EndGameScreen.SetActive(true);
         }
         else
         {

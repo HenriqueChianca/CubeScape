@@ -11,6 +11,8 @@ public class WardrobeDrawer : MonoBehaviour
     public Collider UIOpenButton;
     public Animator UpDrawerAnim, MiddleDrawerAnim, BottomDrawerAnim;
     public Button Screwdriver;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     public void OnMouseDown()
     {
@@ -46,6 +48,7 @@ public class WardrobeDrawer : MonoBehaviour
                 BottomDrawer.interactable = true;
                 
                 UpDrawerAnim.SetBool("isOpen1", false);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
 
@@ -54,6 +57,7 @@ public class WardrobeDrawer : MonoBehaviour
                 MiddleDrawer.interactable = false;
                 BottomDrawer.interactable = false;
                 UpDrawerAnim.SetBool("isOpen1", true);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
             break;
@@ -69,6 +73,7 @@ public class WardrobeDrawer : MonoBehaviour
                 
                 MiddleDrawerAnim.SetBool("isOpen2", false);
                 Screwdriver.interactable = false;
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
 
@@ -78,6 +83,7 @@ public class WardrobeDrawer : MonoBehaviour
                 BottomDrawer.interactable = false;
                 MiddleDrawerAnim.SetBool("isOpen2", true);
                 Screwdriver.interactable = true;
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
             break;
@@ -92,6 +98,7 @@ public class WardrobeDrawer : MonoBehaviour
                 UpDrawer.interactable = true;
                 
                 BottomDrawerAnim.SetBool("isOpen3", false);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
 
@@ -100,6 +107,7 @@ public class WardrobeDrawer : MonoBehaviour
                 MiddleDrawer.interactable = false;
                 UpDrawer.interactable = false;
                 BottomDrawerAnim.SetBool("isOpen3", true);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
             break;

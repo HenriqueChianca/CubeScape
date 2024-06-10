@@ -11,6 +11,8 @@ public class LilWardrobeDrawer : MonoBehaviour
     public Collider LilUIOpenButton, PianoCollider;
     public Animator LilUpDrawerAnim, LilMiddleDrawerAnim;
     public Button Screwdriver;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     public void OnMouseDown()
     {
@@ -41,6 +43,7 @@ public class LilWardrobeDrawer : MonoBehaviour
             {
                 LilMiddleDrawer.interactable = true;
                 LilUpDrawerAnim.SetBool("isOpen", false);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
 
@@ -48,6 +51,7 @@ public class LilWardrobeDrawer : MonoBehaviour
             {
                 LilMiddleDrawer.interactable = false;
                 LilUpDrawerAnim.SetBool("isOpen", true);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
             break;
@@ -60,6 +64,7 @@ public class LilWardrobeDrawer : MonoBehaviour
             {
                 LilUpDrawer.interactable = true;
                 LilMiddleDrawerAnim.SetBool("isOpen", false);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
 
@@ -67,6 +72,7 @@ public class LilWardrobeDrawer : MonoBehaviour
             {
                 LilUpDrawer.interactable = false;
                 LilMiddleDrawerAnim.SetBool("isOpen", true);
+                audioSource.PlayOneShot(audioClip);
                 break;
             }
             break;
