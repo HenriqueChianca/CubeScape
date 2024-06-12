@@ -15,6 +15,7 @@ public class MenuController : MonoBehaviour
     // Referência para o componente Depth of Field
     private DepthOfField depthOfField;
 
+
     private void Start()
     {
         DespausarJogo();
@@ -62,12 +63,4 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    // Função para ativar o efeito Depth of Field se a variável blur for verdadeira
-    private void Update()
-    {
-        if (depthOfField != null)
-        {
-            depthOfField.active = blur;
-        }
-    }
 }
