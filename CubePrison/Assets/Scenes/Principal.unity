@@ -2586,7 +2586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 41.729}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.4, y: 2.3}
+  m_AnchoredPosition: {x: 5.4, y: 2.2999992}
   m_SizeDelta: {x: 138.49, y: 46.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263436875
@@ -4491,7 +4491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &434061552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13832,7 +13832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 70.521515, y: -311.48584}
+  m_AnchoredPosition: {x: 70.52153, y: -311.48584}
   m_SizeDelta: {x: 141.04306, y: 622.9717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467405148
@@ -15062,6 +15062,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PianoKeysRequirement: 0a0000000200000006000000070000000900000003000000
   PianoKeysPlayed: 
+  image: {fileID: 434061553}
+  PreviousRevealValue: 0
+  _time: 0.4
 --- !u!114 &1581381649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16959,7 +16962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 212.63718, y: -311.48584}
+  m_AnchoredPosition: {x: 212.63716, y: -311.48584}
   m_SizeDelta: {x: 143.1882, y: 622.9717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847503129
