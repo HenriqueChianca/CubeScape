@@ -98,15 +98,26 @@ public class CanvasController : MonoBehaviour
             if (!itensUsados.Contains(i))
             {
                 uiItems[i].image.SetActive(false);
+                uiItems[i].selectedImage.SetActive(false);
             }
         }
     }
 
     public void OnButtonClick(GameObject item)
     {
+
+        for (int i = 0; i < uiItems.Length; i++)
+        {
+            uiItems[i].selected = false;
+            uiItems[i].selectedImage.SetActive(false);
+        }
+
         int index = item.transform.GetSiblingIndex();
         uiItems[index].selected = !uiItems[index].selected;
+        uiItems[index].selectedImage.SetActive(true);
+
         print("pinto");
+
     }
 
 }
@@ -114,7 +125,7 @@ public class CanvasController : MonoBehaviour
 [System.Serializable]
 public class UIItem
 {
-    public GameObject image;
+    public GameObject image, selectedImage;
     public string key;
     public int slot;
     public bool selected = false;
