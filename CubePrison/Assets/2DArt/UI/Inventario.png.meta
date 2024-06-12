@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,55 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Inventario_0
+      name: "Sem T\xEDtulo-1_0"
       rect:
         serializedVersion: 2
-        x: 39
-        y: 915
-        width: 1923
-        height: 348
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e7adfca0d9d7154ea166b0413a0858c
-      internalID: -1303393619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inventario_1
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 731
-        width: 220
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c314b1c361e9b244a10690d73cffb18
-      internalID: -1916650491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inventario_2
-      rect:
-        serializedVersion: 2
-        x: 627
-        y: 641
-        width: 48
-        height: 44
+        x: 40
+        y: 922
+        width: 1921
+        height: 383
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92c90ea617f017943bf7c6fdf45731f0
-      internalID: 2071825204
+      spriteID: 85cffd08d2fe91b4492ef47bacc40b8d
+      internalID: -74250293
       vertices: []
       indices: 
       edges: []
@@ -170,9 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Inventario_0: -1303393619
-      Inventario_1: -1916650491
-      Inventario_2: 2071825204
+      "Sem T\xEDtulo-1_0": -74250293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
