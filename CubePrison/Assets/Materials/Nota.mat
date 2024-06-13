@@ -48,7 +48,7 @@ Material:
     - _Float: 0.07
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Reveal: 0.32
+    - _Reveal: 0
     - _Transparency: 0.83
     m_Colors:
     - _Color: {r: 0.127, g: 0.06750756, b: 0.023368003, a: 1}

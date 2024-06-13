@@ -5029,7 +5029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 136, y: -171}
+  m_AnchoredPosition: {x: 136, y: -133}
   m_SizeDelta: {x: 114.2957, y: 113.9493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357177815
@@ -5085,7 +5085,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley
+          m_StringArgument: https://youtu.be/62buaISQHDE
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1089485614}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1357177816
@@ -6289,8 +6301,8 @@ MonoBehaviour:
     m_LineSpacing: 0.76
   m_Text: "Use o mouse para interagir com objetos e explorar o ambiente.\n\nAltere
     o \xE2ngulo da c\xE2mera clicando nas setas nas laterais da tela.\n\nClique nos
-    itens do invent\xE1rio para us\xE1-los em locais espec\xEDficos.\r\n\nPressione
-    \"Esc\" a qualquer momento para abrir o menu do jogo.\n\n\nV\xEDdeo da resolu\xE7\xE3o:                        "
+    itens do invent\xE1rio para us\xE1-los em locais espec\xEDficos.\r\n\n\n\nV\xEDdeo
+    da resolu\xE7\xE3o:                        "
 --- !u!222 &1665564389
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6434,6 +6446,18 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1089485614}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayDelayed
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
