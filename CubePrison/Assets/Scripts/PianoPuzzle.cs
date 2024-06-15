@@ -17,6 +17,7 @@ public class PianoPuzzle : MonoBehaviour
     private string revealProperty = "_Reveal";
 
     public float PreviousRevealValue = 0f, _time = 1f;
+    public bool Notes = false;
 
     // Start is called before the first frame update
     private void Awake()
@@ -90,8 +91,13 @@ public class PianoPuzzle : MonoBehaviour
                 StartCoroutine(ChangeRevealValueOverTime(0.72f, 0.84f, _time));
             }
         }
-
+        
         CompareArraysAndExecuteFunction();
+    }
+
+    public void NotesSeen()
+    {
+        Notes = true;
     }
 
     private void CompareArraysAndExecuteFunction()
@@ -122,8 +128,17 @@ public class PianoPuzzle : MonoBehaviour
 
     private void ExecuteFunction()
     {
-        Debug.Log("Arrays iguais! Executando função...");
-        CrawlSpaceController.GetInstance().OpenCrawlSpace();
+        if (Notes)
+        {
+            Debug.Log("Arrays iguais! Executando função...");
+            CrawlSpaceController.GetInstance().OpenCrawlSpace();
+        }
+        else
+        {
+            Debug.Log("Falta ver a  partitura");
+            PianoKeysPlayed.Clear();
+        }
+        
     }
 
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4546,7 +4546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &434061552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11378,6 +11378,7 @@ MonoBehaviour:
   Notes: {fileID: 0}
   audioSource: {fileID: 1581381645}
   AudioClip: {fileID: 8300000, guid: 6c5d2899ba98edf498a5d7f9c1549150, type: 3}
+  PianoPuzzle: {fileID: 0}
 --- !u!1 &1272200387
 GameObject:
   m_ObjectHideFlags: 0
@@ -14988,6 +14989,7 @@ MonoBehaviour:
   image: {fileID: 434061553}
   PreviousRevealValue: 0
   _time: 0.4
+  Notes: 0
 --- !u!114 &1581381649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17103,6 +17105,7 @@ MonoBehaviour:
   Notes: {fileID: 434061551}
   audioSource: {fileID: 0}
   AudioClip: {fileID: 0}
+  PianoPuzzle: {fileID: 1581381648}
 --- !u!1 &1856096814
 GameObject:
   m_ObjectHideFlags: 0
@@ -18099,6 +18102,7 @@ MonoBehaviour:
   Notes: {fileID: 0}
   audioSource: {fileID: 1581381645}
   AudioClip: {fileID: 8300000, guid: 1a8e91bf911bf2842b9c5d61d88b86c3, type: 3}
+  PianoPuzzle: {fileID: 0}
 --- !u!1 &1980525156
 GameObject:
   m_ObjectHideFlags: 0

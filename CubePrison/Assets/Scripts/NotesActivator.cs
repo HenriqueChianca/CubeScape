@@ -7,12 +7,14 @@ public class NotesActivator : MonoBehaviour
     public GameObject Notes;
     public AudioSource audioSource;
     public AudioClip AudioClip;
+    public PianoPuzzle PianoPuzzle;
 
     private void OnEnable()
     {
         if(Notes != null)
         {
             Notes.SetActive(true);
+            PianoPuzzle.NotesSeen();
         }
 
         if(AudioClip != null)
